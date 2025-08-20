@@ -42,7 +42,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" ref={heroRef} className="relative min-h-screen flex items-start justify-center overflow-hidden pt-48">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-secondary/20"></div>
       
