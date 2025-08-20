@@ -245,10 +245,10 @@ const ContactSection = () => {
                 Speak directly with our team
               </p>
               <a 
-                href="tel:+91-XXXXXXXXXX" 
+                href="tel:+91-9811813137" 
                 className="text-accent hover:text-white transition-colors duration-300 font-semibold"
               >
-                +91-XXXXXXXXXX
+                +91-9811813137
               </a>
             </div>
 
