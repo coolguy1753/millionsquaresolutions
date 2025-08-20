@@ -43,9 +43,10 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          {/* Right side items (Desktop Nav + Button) */}
+          <div className="hidden md:flex items-center space-x-4">
+            {/* Desktop Navigation */}
+            <div className="flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.name}
@@ -57,10 +58,8 @@ const Navigation = () => {
                 </button>
               ))}
             </div>
-          </div>
 
-          {/* Contact Button */}
-          <div className="hidden md:block">
+            {/* Contact Button */}
             <button
               onClick={() => scrollToSection('#contact')}
               className="btn-futuristic"
