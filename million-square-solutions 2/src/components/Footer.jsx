@@ -99,25 +99,13 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex space-x-4 mb-4 md:mb-0">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/millionsquaresolutions/" // <-- Yahan apna sahi LinkedIn URL daalein
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
               </a>
             </div>
 
