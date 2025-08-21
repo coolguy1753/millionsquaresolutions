@@ -90,7 +90,18 @@ const AboutSection = () => {
 />
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">Meet the Founder</h3>
-                <p className="text-primary font-semibold">Balbir Singh - Founder & CEO</p>
+                <div className="flex items-center gap-x-2">
+                  <p className="text-primary font-semibold">Balbir Singh - Founder & CEO</p>
+                  <a 
+                    href="https://www.linkedin.com/in/balbirsingh1990/" // <-- Yahan apna sahi LinkedIn URL daalein
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
             </div>
             
