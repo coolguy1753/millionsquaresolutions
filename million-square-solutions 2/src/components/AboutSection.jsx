@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Award, Target, Users, Zap } from 'lucide-react';
+import { Award, Target, Users, Zap, Linkedin } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
