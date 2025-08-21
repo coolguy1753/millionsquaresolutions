@@ -187,18 +187,21 @@ const handleSubmit = (e) => {
                   </div>
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
-                      Subject *
+                      Service Interested In *
                     </label>
-                    <input
-                      type="text"
+                    <select
                       id="subject"
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                      placeholder="How can we help?"
-                    />
+                    >
+                      <option value="" disabled>Please select a service</option>
+                      <option value="BPO Services">BPO Services</option>
+                      <option value="Customer Success Services">Customer Success Services</option>
+                      <option value="Airbnb Guest & Host Services">Airbnb Guest & Host Services</option>
+                    </select>
                   </div>
                 </div>
 
