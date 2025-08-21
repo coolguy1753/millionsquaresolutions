@@ -86,7 +86,7 @@ const AboutSection = () => {
               <img 
   src="/balbirsingh.jpg" 
   alt="Balbir Singh - Founder & CEO" 
-  className="w-24 h-24 rounded-full object-cover mr-6" 
+  className="w-32 h-32 rounded-full object-cover mr-6" 
 />
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">Meet the Founder</h3>
