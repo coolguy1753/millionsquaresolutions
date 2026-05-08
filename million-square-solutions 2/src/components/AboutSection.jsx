@@ -1,194 +1,115 @@
 import { useEffect, useRef } from 'react';
-import { Award, Target, Users, Zap, Linkedin, Rocket, BarChart3, ShieldCheck } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Award, Target, Rocket, Zap } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
   const sectionRef = useRef(null);
-  const titleRef = useRef(null);
-  const founderRef = useRef(null);
-  const visionRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Title animation
-      gsap.fromTo(titleRef.current,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: titleRef.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
+      gsap.from(".about-content", {
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".about-content",
+          start: "top 80%",
         }
-      );
-
-      // Founder section animation
-      gsap.fromTo(founderRef.current,
-        { opacity: 0, x: -50 },
-        {
-          opacity: 1,
-          y: 0,
-          x: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: founderRef.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
+      });
+      
+      gsap.from(".about-image", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".about-image",
+          start: "top 80%",
         }
-      );
-
-      // Vision section animation
-      gsap.fromTo(visionRef.current,
-        { opacity: 0, x: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          x: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: visionRef.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
-        }
-      );
+      });
     }, sectionRef);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 relative">
+    <section id="about" ref={sectionRef} className="py-24 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Title */}
-        <div ref={titleRef} className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">
-            The Million Square Mission
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Redefining Customer Success by blending 13+ years of operational excellence with modern SaaS strategy.
-          </p>
-        </div>
-
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Founder Section */}
-          <div ref={founderRef} className="glass-morphism p-8 rounded-xl neon-glow">
-            <div className="flex items-center mb-6">
-              <img 
-                src="/balbirsingh.jpg" 
-                alt="Balbir Singh - Founder" 
-                className="w-32 h-32 rounded-full object-cover mr-6 border-2 border-primary/50" 
-              />
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-1">Balbir Singh</h3>
-                <p className="text-primary font-semibold mb-2">Founder & CS Strategist</p>
-                <a 
-                  href="https://www.linkedin.com/in/balbirsingh1990/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 inline-flex items-center gap-2"
-                  aria-label="LinkedIn Profile"
-                >
-                  <Linkedin className="w-5 h-5" />
-                  <span className="text-sm font-medium">Connect on LinkedIn</span>
-                </a>
-              </div>
-            </div>
-            
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              With over 13 years of leadership in global operations and customer success, Balbir Singh founded Million Square Solutions to help SaaS companies move beyond traditional support.
-            </p>
-            
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              His journey from managing large-scale BPO operations for travel and banking giants to scaling Customer Success for global SaaS firms has given him a unique perspective on <strong>Retention-as-a-Growth-Engine.</strong>
-            </p>
-            
-            <p className="text-muted-foreground leading-relaxed">
-              At Million Square, he leads a team of high-caliber CSMs from India, focusing on reducing Time-to-Value (TTV) and maximizing Net Revenue Retention (NRR) for ambitious startups worldwide.
-            </p>
-          </div>
-
-          {/* Vision & Mission */}
-          <div ref={visionRef} className="space-y-6">
-            <div className="glass-morphism p-6 rounded-xl holographic">
-              <div className="flex items-center mb-4">
-                <Target className="w-8 h-8 text-primary mr-3" />
-                <h3 className="text-xl font-bold text-white">Our Vision</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                To be the world’s most trusted partner for Customer-Led Growth, empowering SaaS companies to build unbreakable relationships with their customers.
-              </p>
-            </div>
-
-            <div className="glass-morphism p-6 rounded-xl holographic">
-              <div className="flex items-center mb-4">
-                <Rocket className="w-8 h-8 text-accent mr-3" />
-                <h3 className="text-xl font-bold text-white">Our Mission</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                To deliver elite, strategic CS talent and data-driven playbooks that transform customer support into a predictable revenue driver.
-              </p>
-            </div>
-
-            <div className="glass-morphism p-6 rounded-xl holographic">
-              <div className="flex items-center mb-4">
-                <ShieldCheck className="w-8 h-8 text-secondary mr-3" />
-                <h3 className="text-xl font-bold text-white">Our Values</h3>
-              </div>
-              <p className="text-muted-foreground leading-relaxed">
-                We value <strong>Outcome over Output</strong>, deep empathy in every interaction, and radical transparency in how we measure success for our clients.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Strategic Pillars */}
-        <div className="text-center">
-          <h3 className="text-3xl font-bold futuristic-heading mb-12">The Pillars of Our Partnership</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Scalability",
-                description: "Seamlessly expanding your CS capacity without the overhead.",
-                icon: <Zap className="w-8 h-8 text-yellow-400" />
-              },
-              {
-                title: "Empathetic CX",
-                description: "Human-centric communication that builds long-term loyalty.",
-                icon: <Users className="w-8 h-8 text-pink-400" />
-              },
-              {
-                title: "Data Integrity",
-                description: "Turning customer health scores into actionable expansion plans.",
-                icon: <BarChart3 className="w-8 h-8 text-blue-400" />
-              },
-              {
-                title: "CS Excellence",
-                description: "Operational rigor rooted in 13+ years of global experience.",
-                icon: <Award className="w-8 h-8 text-green-400" />
-              }
-            ].map((value, index) => (
-              <div key={index} className="glass-morphism p-6 rounded-lg card-3d group flex flex-col items-center">
-                <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {value.icon}
+          {/* Content Side */}
+          <div className="about-content">
+            <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-8">
+              Where Human Expertise <br />
+              <span className="text-primary text-3xl md:text-4xl">Meets Generative AI</span>
+            </h2>
+            
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              Founded on the principle that Customer Success is the primary engine for sustainable SaaS growth. 
+              We bridge the gap between traditional relationship management and modern, AI-driven workflows.
+            </p>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 group">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <Award className="w-6 h-6 text-primary" />
                 </div>
-                <h4 className="font-bold text-white mb-2 text-lg">{value.title}</h4>
-                <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
+                <div>
+                  <h4 className="text-xl font-semibold text-white">Oracle Certified AI Leadership</h4>
+                  <p className="text-muted-foreground">Led by Oracle Certified Generative AI Professionals, we bring world-class AI strategy to your CS operations.</p>
+                </div>
               </div>
-            ))}
+
+              <div className="flex gap-4 group">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                  <Target className="w-6 h-6 text-accent" />
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-white">Proven Retention Playbooks</h4>
+                  <p className="text-muted-foreground">Expertise built on managing complex mid-market portfolios with a consistent 100%+ Net Revenue Retention (NRR) track record.</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          {/* Image/Visual Side */}
+          <div className="about-image relative">
+            <div className="relative z-10 glass-morphism p-8 rounded-3xl border border-white/10">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/30 transition-all">
+                  <div className="text-4xl font-bold text-primary mb-2">13+</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">Years Global Expertise</div>
+                </div>
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-accent/30 transition-all">
+                  <div className="text-4xl font-bold text-accent mb-2">100%</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">Retention Focus</div>
+                </div>
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-secondary/30 transition-all">
+                  <Zap className="w-8 h-8 text-secondary mx-auto mb-2" />
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">AI-Driven Ops</div>
+                </div>
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5 hover:border-primary/30 transition-all">
+                  <Rocket className="w-8 h-8 text-primary mx-auto mb-2" />
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground font-semibold">Scalable Growth</div>
+                </div>
+              </div>
+              
+              {/* Founder Quote Style */}
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <blockquote className="italic text-muted-foreground text-sm leading-relaxed">
+                  "Customer Success isn't just about support; it's about revenue protection and sustainable growth. 
+                  We build systems that stop churn before it starts."
+                </blockquote>
+              </div>
+            </div>
+            
+            {/* Background Decorations */}
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl -z-10 animate-pulse" style={{animationDelay: '1s'}}></div>
+          </div>
+
         </div>
       </div>
     </section>
