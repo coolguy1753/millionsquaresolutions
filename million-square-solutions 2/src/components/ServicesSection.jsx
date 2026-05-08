@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Headphones, Users, Home, ArrowRight } from 'lucide-react';
+import { Target, TrendingUp, Zap, ArrowRight, BarChart3, Rocket, HeartHandshake, ShieldCheck } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -56,40 +56,40 @@ const ServicesSection = () => {
 
   const services = [
     {
-      icon: <Headphones className="w-12 h-12" />,
-      title: "BPO Services",
-      description: "Comprehensive business process outsourcing solutions including inbound services, outbound services, and back-office operations.",
+      icon: <Target className="w-12 h-12" />,
+      title: "CS Strategy & Consulting",
+      description: "We design high-impact customer success roadmaps tailored for SaaS growth. Moving beyond support to proactive outcome management.",
       features: [
-        "Customer Service & Support",
-        "Collections & Payment Processing", 
-        "Data Entry & Management",
-        "Technical Support"
+        "Customer Journey Mapping",
+        "Success Plan Design", 
+        "Health Score Architecture",
+        "QBR & Executive Business Reviews"
       ],
-      color: "from-primary to-blue-400"
+      color: "from-blue-600 to-cyan-400"
     },
     {
-      icon: <Users className="w-12 h-12" />,
-      title: "Customer Success Services",
-      description: "Proactive customer success strategies to ensure your clients achieve their desired outcomes and drive recurring revenue.",
+      icon: <TrendingUp className="w-12 h-12" />,
+      title: "Revenue & Retention Ops",
+      description: "Data-driven strategies to maximize Net Revenue Retention (NRR). We identify churn risks before they happen and unlock expansion revenue.",
       features: [
-        "Onboarding & Implementation",
-        "Proactive Health Checks",
-        "Churn Prevention",
-        "Upselling Opportunities"
+        "Churn Mitigation Playbooks",
+        "Renewal Management",
+        "Expansion & Upsell Identification",
+        "Net Retention Optimization"
       ],
-      color: "from-secondary to-purple-400"
+      color: "from-purple-600 to-pink-400"
     },
     {
-      icon: <Home className="w-12 h-12" />,
-      title: "Airbnb Services",
-      description: "Dedicated 24/7 support for Airbnb hosts and guests to maximize ratings, revenue, and ensure seamless experiences.",
+      icon: <Zap className="w-12 h-12" />,
+      title: "Managed CSM Teams",
+      description: "Elite, dedicated Customer Success Managers from India. Silicon Valley quality at a strategic scale, integrated seamlessly with your team.",
       features: [
-        "Listing Optimization",
-        "Guest Communication",
-        "Calendar Management",
-        "Review Management"
+        "Global Time-zone Coverage",
+        "Empathetic & Technical Talent",
+        "Scalable Team Structure",
+        "AI-Driven CS Workflows"
       ],
-      color: "from-accent to-green-400"
+      color: "from-amber-500 to-orange-400"
     }
   ];
 
@@ -99,11 +99,11 @@ const ServicesSection = () => {
         {/* Section Title */}
         <div ref={titleRef} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">
-            Our Comprehensive Service Portfolio
+            Strategic Customer Success Framework
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover our range of specialized services designed to optimize your operations, 
-            enhance customer satisfaction, and drive significant growth for your business.
+            We don't just manage tickets; we manage outcomes. Our framework is built to 
+            reduce churn, boost adoption, and drive predictable recurring revenue.
           </p>
         </div>
 
@@ -144,7 +144,7 @@ const ServicesSection = () => {
 
               {/* Learn More Button */}
               <button className="flex items-center text-primary hover:text-white transition-colors duration-300 font-semibold group-hover:translate-x-2 transform transition-transform duration-300">
-                Learn More
+                Explore Strategy
                 <ArrowRight className="ml-2 w-4 h-4" />
               </button>
             </div>
@@ -154,17 +154,18 @@ const ServicesSection = () => {
         {/* Why Choose Us Section */}
         <div className="mt-20 text-center">
           <h3 className="text-3xl font-bold futuristic-heading mb-12">
-            Why Choose Million Square Solutions?
+            The Million Square Advantage
           </h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "13+ Years of Global Expertise", desc: "Proven track record across industries" },
-              { title: "Client-Centric Approach", desc: "Tailored solutions for your unique needs" },
-              { title: "Significant Cost Savings", desc: "Optimize operations while reducing costs" },
-              { title: "Scalability", desc: "Grow with flexible, scalable solutions" }
+              { icon: <ShieldCheck className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "Expert-Led Execution", desc: "Strategy by seasoned CS Managers" },
+              { icon: <HeartHandshake className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "High-Empathy Talent", desc: "Building real human relationships" },
+              { icon: <BarChart3 className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "NRR Focused", desc: "Moving the needle on retention revenue" },
+              { icon: <Rocket className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "AI-Ready Ops", desc: "Automating workflows for maximum scale" }
             ].map((item, index) => (
               <div key={index} className="glass-morphism p-6 rounded-lg holographic">
+                {item.icon}
                 <h4 className="font-bold text-white mb-2">{item.title}</h4>
                 <p className="text-muted-foreground text-sm">{item.desc}</p>
               </div>
@@ -177,4 +178,3 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
-
