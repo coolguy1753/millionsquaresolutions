@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { 
-  Building2, 
-  Plane, 
-  ShoppingCart, 
   Monitor, 
-  Heart, 
-  GraduationCap 
+  ShieldCheck, 
+  ShoppingCart, 
+  Cpu, 
+  BarChart, 
+  Globe 
 } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -63,45 +63,45 @@ const IndustriesSection = () => {
 
   const industries = [
     {
-      icon: <Building2 className="w-8 h-8" />,
-      title: "Banking & Financial Services",
-      description: "From secure data processing to comprehensive customer support and collections, we help financial institutions streamline operations, enhance security, and improve customer satisfaction.",
-      services: ["BPO (Inbound, Outbound, Back Office)", "Customer Success"],
+      icon: <Monitor className="w-8 h-8" />,
+      title: "Vertical SaaS",
+      description: "Driving deep adoption for industry-specific software. We help vertical SaaS firms manage complex user journeys and reduce high-touch churn.",
+      services: ["Success Playbooks", "Niche Onboarding"],
       color: "from-blue-500 to-blue-600"
     },
     {
-      icon: <Plane className="w-8 h-8" />,
-      title: "Travel & Hospitality",
-      description: "Supporting travel agencies, airlines, and hospitality businesses with booking management, customer service, and specialized Airbnb solutions to ensure seamless guest experiences.",
-      services: ["BPO (Customer Service, Order Taking)", "Airbnb Services"],
+      icon: <ShieldCheck className="w-8 h-8" />,
+      title: "FinTech & RegTech",
+      description: "Managing high-stakes client relationships where security and compliance are paramount. We ensure your users feel supported and secure.",
+      services: ["Trust-Based CS", "Compliance Monitoring"],
       color: "from-purple-500 to-purple-600"
     },
     {
       icon: <ShoppingCart className="w-8 h-8" />,
-      title: "E-commerce & Retail",
-      description: "Optimizing online sales processes, managing customer inquiries, and handling backend operations to enhance the shopping experience and boost sales.",
-      services: ["BPO (Customer Service, Order Taking, Back Office)", "Customer Success"],
+      title: "E-commerce Tech",
+      description: "Optimizing the customer lifecycle for Shopify apps, martech tools, and inventory platforms to drive predictable renewals.",
+      services: ["Expansion Sales", "Health Tracking"],
       color: "from-green-500 to-green-600"
     },
     {
-      icon: <Monitor className="w-8 h-8" />,
-      title: "SaaS & Technology",
-      description: "Driving product adoption, ensuring customer retention, and providing technical support for software and technology companies.",
-      services: ["Customer Success", "BPO (Technical Support, Back Office)"],
+      icon: <Cpu className="w-8 h-8" />,
+      title: "AI & Infrastructure",
+      description: "Helping technical founders translate complex AI features into tangible business outcomes for their end users.",
+      services: ["Technical Success", "Usage Analytics"],
       color: "from-cyan-500 to-cyan-600"
     },
     {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Healthcare (Non-clinical BPO)",
-      description: "Assisting healthcare providers with non-clinical back-office tasks, patient scheduling support, and administrative data management while ensuring compliance.",
-      services: ["BPO (Back Office, Data Entry)"],
+      icon: <BarChart className="w-8 h-8" />,
+      title: "Data & Analytics",
+      description: "Ensuring users extract maximum value from data platforms, turning complex dashboards into actionable business insights.",
+      services: ["Adoption Strategy", "ROI Reporting"],
       color: "from-red-500 to-red-600"
     },
     {
-      icon: <GraduationCap className="w-8 h-8" />,
-      title: "Education & E-Learning",
-      description: "Supporting educational platforms with administrative tasks, student support, and content management solutions.",
-      services: ["BPO (Back Office, Customer Service)"],
+      icon: <Globe className="w-8 h-8" />,
+      title: "Global Marketplaces",
+      description: "Scaling support and success operations for double-sided marketplaces that require 24/7 strategic oversight.",
+      services: ["Scale Ops", "Global CS Talent"],
       color: "from-orange-500 to-orange-600"
     }
   ];
@@ -112,11 +112,11 @@ const IndustriesSection = () => {
         {/* Section Title */}
         <div ref={titleRef} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">
-            Industries We Empower
+            SaaS Segments We Empower
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Million Square Solutions brings specialized expertise to a diverse range of industries, 
-            understanding their unique challenges and delivering tailored solutions that drive success.
+            We specialize in high-growth technology sectors, bringing domain-specific 
+            Customer Success frameworks to ensure your users never stop growing.
           </p>
         </div>
 
@@ -147,7 +147,7 @@ const IndustriesSection = () => {
 
               {/* Services */}
               <div className="space-y-2">
-                <h4 className="text-sm font-semibold text-primary mb-2">Relevant Services:</h4>
+                <h4 className="text-sm font-semibold text-primary mb-2">Success Metrics:</h4>
                 {industry.services.map((service, serviceIndex) => (
                   <div key={serviceIndex} className="flex items-center text-xs text-muted-foreground">
                     <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2 flex-shrink-0"></div>
@@ -163,11 +163,11 @@ const IndustriesSection = () => {
         <div className="mt-16 text-center">
           <div className="glass-morphism p-8 rounded-xl holographic max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold futuristic-heading mb-4">
-              Don't See Your Industry?
+              Building the Future of SaaS?
             </h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              We work with businesses across various sectors. Our adaptable solutions and experienced team 
-              can be tailored to meet the unique requirements of your industry.
+              Whether you are an early-stage startup or a scaling enterprise, our 
+              Customer Success models adapt to your product's unique DNA.
             </p>
             <button 
               onClick={() => {
@@ -176,7 +176,7 @@ const IndustriesSection = () => {
               }}
               className="btn-futuristic"
             >
-              Discuss Your Needs
+              Get a Customized CS Roadmap
             </button>
           </div>
         </div>
@@ -186,4 +186,3 @@ const IndustriesSection = () => {
 };
 
 export default IndustriesSection;
-
