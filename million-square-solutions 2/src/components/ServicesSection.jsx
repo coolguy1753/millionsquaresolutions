@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Target, TrendingUp, Zap, ArrowRight, BarChart3, Rocket, HeartHandshake, ShieldCheck } from 'lucide-react';
+import { Users, Zap, BarChart3, ShieldCheck, Database, BrainCircuit } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -7,47 +7,34 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ServicesSection = () => {
   const sectionRef = useRef(null);
-  const titleRef = useRef(null);
   const cardsRef = useRef([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Title animation
-      gsap.fromTo(titleRef.current,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: titleRef.current,
-            start: "top 80%",
-            end: "bottom 20%",
-            toggleActions: "play none none reverse"
-          }
+      gsap.from(".service-header", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".service-header",
+          start: "top 80%",
         }
-      );
+      });
 
-      // Cards animation
       cardsRef.current.forEach((card, index) => {
-        if (card) {
-          gsap.fromTo(card,
-            { opacity: 0, y: 50, rotationY: -15 },
-            {
-              opacity: 1,
-              y: 0,
-              rotationY: 0,
-              duration: 0.8,
-              delay: index * 0.2,
-              scrollTrigger: {
-                trigger: card,
-                start: "top 85%",
-                end: "bottom 20%",
-                toggleActions: "play none none reverse"
-              }
+        gsap.fromTo(card,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            delay: index * 0.2,
+            scrollTrigger: {
+              trigger: card,
+              start: "top 85%",
             }
-          );
-        }
+          }
+        );
       });
     }, sectionRef);
 
@@ -56,121 +43,75 @@ const ServicesSection = () => {
 
   const services = [
     {
-      icon: <Target className="w-12 h-12" />,
-      title: "CS Strategy & Consulting",
-      description: "We design high-impact customer success roadmaps tailored for SaaS growth. Moving beyond support to proactive outcome management.",
-      features: [
-        "Customer Journey Mapping",
-        "Success Plan Design", 
-        "Health Score Architecture",
-        "QBR & Executive Business Reviews"
-      ],
-      color: "from-blue-600 to-cyan-400"
-    },
-    {
-      icon: <TrendingUp className="w-12 h-12" />,
-      title: "Revenue & Retention Ops",
-      description: "Data-driven strategies to maximize Net Revenue Retention (NRR). We identify churn risks before they happen and unlock expansion revenue.",
-      features: [
-        "Churn Mitigation Playbooks",
-        "Renewal Management",
-        "Expansion & Upsell Identification",
-        "Net Retention Optimization"
-      ],
-      color: "from-purple-600 to-pink-400"
-    },
-    {
-      icon: <Zap className="w-12 h-12" />,
       title: "Managed CSM Teams",
-      description: "Elite, dedicated Customer Success Managers from India. Silicon Valley quality at a strategic scale, integrated seamlessly with your team.",
-      features: [
-        "Global Time-zone Coverage",
-        "Empathetic & Technical Talent",
-        "Scalable Team Structure",
-        "AI-Driven CS Workflows"
-      ],
-      color: "from-amber-500 to-orange-400"
+      description: "Elite, dedicated Customer Success Managers who integrate into your workflow to manage 100+ accounts seamlessly.",
+      icon: <Users className="w-8 h-8 text-primary" />,
+      tag: "Core Offering"
+    },
+    {
+      title: "AI-Powered Retention",
+      description: "We equip our CSMs with Generative AI playbooks to predict churn and automate personalized customer journeys.",
+      icon: <BrainCircuit className="w-8 h-8 text-accent" />,
+      tag: "Strategic Edge"
+    },
+    {
+      title: "NRR Optimization",
+      description: "Focusing on Net Revenue Retention through proactive expansion strategies and systematic renewal management.",
+      icon: <BarChart3 className="w-8 h-8 text-secondary" />,
+      tag: "Growth Focus"
+    },
+    {
+      title: "CRM Architecture",
+      description: "Designing HubSpot & Salesforce workflows to provide your leadership with 360-degree customer health visibility.",
+      icon: <Database className="w-8 h-8 text-primary" />,
+      tag: "Infrastructure"
+    },
+    {
+      title: "Churn Prevention Systems",
+      description: "Building data-driven early warning systems that stop churn before it starts, saving at-risk revenue.",
+      icon: <ShieldCheck className="w-8 h-8 text-accent" />,
+      tag: "Revenue Protection"
+    },
+    {
+      title: "Scaleable CS Ops",
+      description: "Standardizing QBRs, onboarding playbooks, and escalation management for rapid SaaS scaling.",
+      icon: <Zap className="w-8 h-8 text-secondary" />,
+      tag: "Operational Excellence"
     }
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="py-20 relative">
+    <section id="services" ref={sectionRef} className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Title */}
-        <div ref={titleRef} className="text-center mb-16">
+        <div className="service-header text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">
-            Strategic Customer Success Framework
+            Elite CSM Teams. AI-Driven Results.
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We don't just manage tickets; we manage outcomes. Our framework is built to 
-            reduce churn, boost adoption, and drive predictable recurring revenue.
+            We don't just provide staff; we provide a high-performance Customer Success engine 
+            built on 13+ years of SaaS growth expertise.
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
-              key={service.title}
+              key={index}
               ref={el => cardsRef.current[index] = el}
-              className="group card-3d glass-morphism p-8 rounded-xl hover:neon-glow transition-all duration-500 cursor-pointer"
+              className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-500 group relative"
             >
-              {/* Icon with gradient background */}
-              <div className={`w-20 h-20 rounded-full bg-gradient-to-r ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <div className="text-white">
-                  {service.icon}
-                </div>
+              <div className="absolute top-4 right-6 text-[10px] uppercase tracking-widest text-primary/60 font-bold">
+                {service.tag}
               </div>
-
-              {/* Service Title */}
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors duration-300">
-                {service.title}
-              </h3>
-
-              {/* Service Description */}
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                {service.icon}
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
-
-              {/* Features List */}
-              <ul className="space-y-2 mb-6">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-
-              {/* Learn More Button */}
-              <button className="flex items-center text-primary hover:text-white transition-colors duration-300 font-semibold group-hover:translate-x-2 transform transition-transform duration-300">
-                Explore Strategy
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
             </div>
           ))}
-        </div>
-
-        {/* Why Choose Us Section */}
-        <div className="mt-20 text-center">
-          <h3 className="text-3xl font-bold futuristic-heading mb-12">
-            The Million Square Advantage
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: <ShieldCheck className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "Expert-Led Execution", desc: "Strategy by seasoned CS Managers" },
-              { icon: <HeartHandshake className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "High-Empathy Talent", desc: "Building real human relationships" },
-              { icon: <BarChart3 className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "NRR Focused", desc: "Moving the needle on retention revenue" },
-              { icon: <Rocket className="w-6 h-6 mb-2 mx-auto text-primary" />, title: "AI-Ready Ops", desc: "Automating workflows for maximum scale" }
-            ].map((item, index) => (
-              <div key={index} className="glass-morphism p-6 rounded-lg holographic">
-                {item.icon}
-                <h4 className="font-bold text-white mb-2">{item.title}</h4>
-                <p className="text-muted-foreground text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
