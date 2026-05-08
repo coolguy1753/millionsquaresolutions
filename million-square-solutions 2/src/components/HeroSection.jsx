@@ -58,8 +58,8 @@ const HeroSection = () => {
             ref={titleRef}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 futuristic-heading leading-tight"
           >
-            Empowering Your Business with{' '}
-            <span className="text-primary neon-text">Comprehensive Solutions</span>
+            Scale Your SaaS Retention with{' '}
+            <span className="text-primary neon-text">Strategic CS Talent</span>
           </h1>
           
           {/* Subtitle */}
@@ -67,9 +67,9 @@ const HeroSection = () => {
             ref={subtitleRef}
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Million Square Solutions: Your Trusted Partner for BPO, Customer Success, and Airbnb Services.
+            Million Square Solutions: Your Extended Customer Success Team. We bridge the gap between product features and customer outcomes.
             <span className="block mt-2 text-primary font-semibold">
-              Leveraging 13+ years of global expertise to drive your success.
+              Leveraging 13+ years of expertise to boost NRR and drive sustainable growth.
             </span>
           </p>
           
@@ -79,7 +79,7 @@ const HeroSection = () => {
               onClick={scrollToServices}
               className="btn-futuristic flex items-center gap-2 text-lg px-8 py-4"
             >
-              Explore Our Services
+              Our Success Framework
               <ArrowRight size={20} />
             </button>
             
@@ -88,23 +88,23 @@ const HeroSection = () => {
               className="glass-morphism hover:bg-white/10 text-white border border-white/20 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
             >
               <Play size={20} />
-              Get Consultation
+              Book Strategy Audit
             </button>
           </div>
           
           {/* Stats */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="glass-morphism p-6 rounded-lg neon-glow">
-              <div className="text-3xl font-bold text-primary mb-2">13+</div>
-              <div className="text-muted-foreground">Years of Expertise</div>
+              <div className="text-3xl font-bold text-primary mb-2">NRR</div>
+              <div className="text-muted-foreground">Driven Focus</div>
             </div>
             <div className="glass-morphism p-6 rounded-lg neon-glow">
-              <div className="text-3xl font-bold text-accent mb-2">24/7</div>
-              <div className="text-muted-foreground">Support Available</div>
+              <div className="text-3xl font-bold text-accent mb-2">Churn</div>
+              <div className="text-muted-foreground">Mitigation Experts</div>
             </div>
             <div className="glass-morphism p-6 rounded-lg neon-glow">
-              <div className="text-3xl font-bold text-secondary mb-2">100%</div>
-              <div className="text-muted-foreground">Client Satisfaction</div>
+              <div className="text-3xl font-bold text-secondary mb-2">AI-Ready</div>
+              <div className="text-muted-foreground">CS Operations</div>
             </div>
           </div>
         </div>
