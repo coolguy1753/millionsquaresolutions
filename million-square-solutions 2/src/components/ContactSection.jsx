@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, Clock } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -81,31 +81,31 @@ const ContactSection = () => {
     });
   };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const formData = new FormData(form);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formDataObj = new FormData(form);
 
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
-        });
-      }, 3000);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formDataObj).toString(),
     })
-    .catch((error) => alert(error));
-};
+      .then(() => {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            subject: '',
+            message: ''
+          });
+        }, 5000);
+      })
+      .catch((error) => alert(error));
+  };
 
   return (
     <section id="contact" ref={sectionRef} className="py-20 relative">
@@ -113,25 +113,25 @@ const handleSubmit = (e) => {
         {/* Section Title */}
         <div ref={titleRef} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">
-            Get in Touch with Million Square Solutions
+            Scale Your Customer Success
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We're here to help your business thrive. Reach out to us to discuss your specific needs 
-            and how we can partner for success.
+            Ready to transform your retention strategy? Let's discuss how our managed CSM teams 
+            can drive predictable NRR for your SaaS.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div ref={formRef} className="glass-morphism p-8 rounded-xl neon-glow">
-            <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Request a Strategic Consultation</h3>
             
             {isSubmitted ? (
               <div className="text-center py-8">
-                <CheckCircle className="w-16 h-16 text-accent mx-auto mb-4" />
-                <h4 className="text-xl font-bold text-accent mb-2">Message Sent Successfully!</h4>
+                <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
+                <h4 className="text-xl font-bold text-white mb-2">Inquiry Received!</h4>
                 <p className="text-muted-foreground">
-                  Thank you for reaching out. We'll get back to you within 24 hours.
+                  Our strategy team will reach out to you within 12-24 hours.
                 </p>
               </div>
             ) : (
@@ -140,7 +140,7 @@ const handleSubmit = (e) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
-                      Name *
+                      Full Name *
                     </label>
                     <input
                       type="text"
@@ -149,13 +149,13 @@ const handleSubmit = (e) => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                      placeholder="Your full name"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all"
+                      placeholder="John Doe"
                     />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
-                      Email *
+                      Work Email *
                     </label>
                     <input
                       type="email"
@@ -164,8 +164,8 @@ const handleSubmit = (e) => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                      placeholder="your.email@company.com"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all"
+                      placeholder="john@saas-growth.com"
                     />
                   </div>
                 </div>
@@ -181,13 +181,13 @@ const handleSubmit = (e) => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
-                      placeholder="+1 (555) 123-4567"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all"
+                      placeholder="+91-XXXXX-XXXXX"
                     />
                   </div>
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">
-                      Service Interested In *
+                      Focus Area *
                     </label>
                     <select
                       id="subject"
@@ -195,19 +195,20 @@ const handleSubmit = (e) => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 bg-[#1a1a2e] border border-white/10 rounded-lg text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all appearance-none"
                     >
-                      <option value="" disabled>Please select a service</option>
-                      <option value="BPO Services">BPO Services</option>
-                      <option value="Customer Success Services">Customer Success Services</option>
-                      <option value="Airbnb Guest & Host Services">Airbnb Guest & Host Services</option>
+                      <option value="" disabled>Select an area</option>
+                      <option value="CS Strategy & Consulting">CS Strategy & Consulting</option>
+                      <option value="Revenue & Retention Ops">Revenue & Retention Ops</option>
+                      <option value="Managed CSM Teams">Managed CSM Teams</option>
+                      <option value="General Inquiry">General Inquiry</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
-                    Message *
+                    How can we help? *
                   </label>
                   <textarea
                     id="message"
@@ -215,92 +216,80 @@ const handleSubmit = (e) => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    rows={6}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Tell us about your project and requirements..."
+                    rows={4}
+                    className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all resize-none"
+                    placeholder="Briefly describe your current CS challenges or goals..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="btn-futuristic w-full flex items-center justify-center gap-2"
+                  className="btn-futuristic w-full flex items-center justify-center gap-2 py-4 font-bold text-lg"
                 >
                   <Send className="w-5 h-5" />
-                  Send Message
+                  Submit Inquiry
                 </button>
               </form>
             )}
           </div>
 
           {/* Contact Information */}
-          <div ref={contactInfoRef} className="space-y-8">
-            <div className="glass-morphism p-6 rounded-xl holographic">
-              <div className="flex items-center mb-4">
-                <Mail className="w-6 h-6 text-primary mr-3" />
-                <h3 className="text-xl font-bold text-white">Email Us</h3>
+          <div ref={contactInfoRef} className="space-y-6">
+            <div className="glass-morphism p-6 rounded-xl holographic flex items-start">
+              <Mail className="w-8 h-8 text-primary mr-4 mt-1" />
+              <div>
+                <h3 className="text-xl font-bold text-white mb-1">Email Our Strategy Team</h3>
+                <a 
+                  href="mailto:info@millionsquaresolutions.com" 
+                  className="text-primary hover:text-white transition-colors text-lg"
+                >
+                  info@millionsquaresolutions.com
+                </a>
               </div>
-              <p className="text-muted-foreground mb-2">
-                For general inquiries and business partnerships
-              </p>
-              <a 
-                href="mailto:info@millionsquaresolutions.com" 
-                className="text-primary hover:text-white transition-colors duration-300 font-semibold"
-              >
-                info@millionsquaresolutions.com
-              </a>
             </div>
 
-            <div className="glass-morphism p-6 rounded-xl holographic">
-              <div className="flex items-center mb-4">
-                <Phone className="w-6 h-6 text-accent mr-3" />
-                <h3 className="text-xl font-bold text-white">Call Us</h3>
+            <div className="glass-morphism p-6 rounded-xl holographic flex items-start">
+              <Phone className="w-8 h-8 text-accent mr-4 mt-1" />
+              <div>
+                <h3 className="text-xl font-bold text-white mb-1">Direct Line</h3>
+                <a 
+                  href="tel:+91-9811813137" 
+                  className="text-accent hover:text-white transition-colors text-lg"
+                >
+                  +91-9811813137
+                </a>
               </div>
-              <p className="text-muted-foreground mb-2">
-                Speak directly with our team
-              </p>
-              <a 
-                href="tel:+91-9811813137" 
-                className="text-accent hover:text-white transition-colors duration-300 font-semibold"
-              >
-                +91-9811813137
-              </a>
             </div>
 
-            <div className="glass-morphism p-6 rounded-xl holographic">
-              <div className="flex items-center mb-4">
-                <MapPin className="w-6 h-6 text-secondary mr-3" />
-                <h3 className="text-xl font-bold text-white">Visit Us</h3>
+            <div className="glass-morphism p-6 rounded-xl holographic flex items-start">
+              <MapPin className="w-8 h-8 text-secondary mr-4 mt-1" />
+              <div>
+                <h3 className="text-xl font-bold text-white mb-1">Office Headquarters</h3>
+                <address className="text-muted-foreground not-italic leading-relaxed">
+                  G-3/16, First Floor, Malviya Nagar<br />
+                  New Delhi, Delhi 110017, India
+                </address>
               </div>
-              <p className="text-muted-foreground mb-2">
-                Our office location
-              </p>
-              <address className="text-white not-italic leading-relaxed">
-                G-3/16, First Floor<br />
-                Malviya Nagar<br />
-                New Delhi, Delhi 110017<br />
-                India
-              </address>
             </div>
 
-            {/* Business Hours */}
+            {/* Global Operations Card */}
             <div className="glass-morphism p-6 rounded-xl holographic">
-              <h3 className="text-xl font-bold text-white mb-4">Business Hours</h3>
-              <div className="space-y-2 text-muted-foreground">
-                <div className="flex justify-between">
-                  <span>Monday - Friday:</span>
-                  <span className="text-white">9:00 AM - 6:00 PM IST</span>
+              <div className="flex items-center gap-3 mb-4">
+                <Clock className="w-6 h-6 text-primary" />
+                <h3 className="text-xl font-bold text-white">Global Availability</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between border-b border-white/5 pb-2">
+                  <span className="text-muted-foreground">Strategic Support</span>
+                  <span className="text-white font-medium">24/7 Global Coverage</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span className="text-white">10:00 AM - 4:00 PM IST</span>
+                <div className="flex justify-between border-b border-white/5 pb-2">
+                  <span className="text-muted-foreground">Office Hours (IST)</span>
+                  <span className="text-white font-medium">9:00 AM - 6:00 PM</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span className="text-white">Closed</span>
-                </div>
-                <div className="mt-4 pt-4 border-t border-white/10">
-                  <p className="text-primary font-semibold">24/7 Support Available for Existing Clients</p>
-                </div>
+                <p className="text-sm text-primary italic mt-2">
+                  *Our managed CSM teams align with your specific time zones (EST, PST, GMT).
+                </p>
               </div>
             </div>
           </div>
@@ -311,4 +300,3 @@ const handleSubmit = (e) => {
 };
 
 export default ContactSection;
-
