@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, ArrowUpRight } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,36 +11,36 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-t from-background to-background/95 border-t border-white/10">
+    <footer className="relative bg-gradient-to-t from-background to-background/95 border-t border-white/10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold futuristic-heading mb-4">
               Million Square Solutions
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed max-w-md">
-              Your trusted partner for comprehensive BPO, Customer Success, and Airbnb services. 
-              Leveraging 13+ years of global expertise to drive your business success.
+              A premium Customer Success & Retention agency. We help SaaS companies 
+              scale their post-sales operations through data-driven playbooks and elite CSM talent.
             </p>
             
             {/* Contact Info */}
-            <div className="space-y-3">
-              <div className="flex items-center text-muted-foreground">
-                <Mail className="w-4 h-4 mr-3 text-primary" />
+            <div className="space-y-4">
+              <div className="flex items-center text-muted-foreground group">
+                <Mail className="w-4 h-4 mr-3 text-primary group-hover:scale-110 transition-transform" />
                 <a href="mailto:info@millionsquaresolutions.com" className="hover:text-primary transition-colors duration-300">
                   info@millionsquaresolutions.com
                 </a>
               </div>
-              <div className="flex items-center text-muted-foreground">
-                <Phone className="w-4 h-4 mr-3 text-primary" />
+              <div className="flex items-center text-muted-foreground group">
+                <Phone className="w-4 h-4 mr-3 text-primary group-hover:scale-110 transition-transform" />
                 <a href="tel:+91-9811813137" className="hover:text-primary transition-colors duration-300">
                   +91-9811813137
                 </a>
               </div>
-              <div className="flex items-start text-muted-foreground">
-                <MapPin className="w-4 h-4 mr-3 text-primary mt-1 flex-shrink-0" />
-                <address className="not-italic">
+              <div className="flex items-start text-muted-foreground group">
+                <MapPin className="w-4 h-4 mr-3 text-primary mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <address className="not-italic text-sm">
                   G-3/16, First Floor, Malviya Nagar<br />
                   New Delhi, Delhi 110017, India
                 </address>
@@ -50,20 +50,22 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
+              Navigation <div className="w-12 h-[1px] bg-primary/30"></div>
+            </h3>
+            <ul className="space-y-3">
               {[
-                { name: 'Home', href: '#home' },
-                { name: 'About Us', href: '#about' },
-                { name: 'Services', href: '#services' },
-                { name: 'Industries', href: '#industries' },
-                { name: 'Contact', href: '#contact' }
+                { name: 'Strategy', href: '#services' },
+                { name: 'CS Roadmap', href: '#industries' },
+                { name: 'Our Mission', href: '#about' },
+                { name: 'Contact Us', href: '#contact' }
               ].map((link) => (
                 <li key={link.name}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    className="text-muted-foreground hover:text-primary transition-all duration-300 flex items-center group"
                   >
+                    <ArrowUpRight className="w-3 h-3 mr-2 opacity-0 group-hover:opacity-100 transition-all" />
                     {link.name}
                   </button>
                 </li>
@@ -71,22 +73,23 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Specializations */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Our Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
+              Focus Areas <div className="w-12 h-[1px] bg-primary/30"></div>
+            </h3>
+            <ul className="space-y-3">
               {[
-                'BPO Services',
-                'Customer Success',
-                'Airbnb Services',
-                'Inbound Support',
-                'Outbound Services',
-                'Back Office Solutions'
+                'Churn Mitigation',
+                'Managed CSM Teams',
+                'Revenue Operations',
+                'NPS & Health Scoring',
+                'Customer Advocacy',
+                'Retention Strategy'
               ].map((service) => (
-                <li key={service}>
-                  <span className="text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer">
-                    {service}
-                  </span>
+                <li key={service} className="text-muted-foreground text-sm flex items-center gap-2">
+                  <div className="w-1 h-1 bg-primary rounded-full"></div>
+                  {service}
                 </li>
               ))}
             </ul>
@@ -94,12 +97,13 @@ const Footer = () => {
         </div>
 
         {/* Social Media & Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="mt-16 pt-8 border-t border-white/5">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Social Media Links */}
-            <div className="flex space-x-4 mb-4 md:mb-0">
+            <div className="flex items-center gap-4">
+              <span className="text-xs text-muted-foreground uppercase tracking-widest">Connect:</span>
               <a
-                href="https://www.linkedin.com/company/millionsquaresolutions/" // <-- Yahan apna sahi LinkedIn URL daalein
+                href="https://www.linkedin.com/company/millionsquaresolutions/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
@@ -109,33 +113,26 @@ const Footer = () => {
               </a>
             </div>
 
-            {/* Copyright */}
+            {/* Copyright & Legal */}
             <div className="text-center md:text-right">
               <p className="text-muted-foreground text-sm">
-                © {currentYear} Million Square Solutions. All rights reserved.
+                © {currentYear} <span className="text-white font-medium">Million Square Solutions</span>. 
+                Strategic Success Partner.
               </p>
-              <div className="flex flex-wrap justify-center md:justify-end gap-4 mt-2 text-xs text-muted-foreground">
-                <button className="hover:text-primary transition-colors duration-300">
-                  Privacy Policy
-                </button>
-                <button className="hover:text-primary transition-colors duration-300">
-                  Terms of Service
-                </button>
-                <button className="hover:text-primary transition-colors duration-300">
-                  Cookie Policy
-                </button>
+              <div className="flex flex-wrap justify-center md:justify-end gap-6 mt-3 text-[10px] uppercase tracking-widest text-muted-foreground/60">
+                <button className="hover:text-primary transition-colors">Privacy</button>
+                <button className="hover:text-primary transition-colors">Terms</button>
+                <button className="hover:text-primary transition-colors">Security</button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Floating elements for visual enhancement */}
-      <div className="absolute top-10 left-10 w-8 h-8 rounded-full bg-primary/10 floating-animation"></div>
-      <div className="absolute bottom-10 right-10 w-6 h-6 rounded-full bg-accent/10 floating-animation" style={{ animationDelay: '2s' }}></div>
+      {/* Subtle background decoration */}
+      <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
     </footer>
   );
 };
 
 export default Footer;
-
