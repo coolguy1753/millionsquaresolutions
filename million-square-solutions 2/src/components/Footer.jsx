@@ -94,19 +94,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-4">
               <span className="text-xs text-muted-foreground uppercase tracking-widest">Connect:</span>
-              
-                href="https://www.linkedin.com/company/millionsquaresolutions/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-muted-foreground hover:text-primary transition-all"
-              >
+              <a href="https://www.linkedin.com/company/millionsquaresolutions/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-muted-foreground hover:text-primary transition-all">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
             <div className="text-center md:text-right">
               <p className="text-muted-foreground text-sm">
-                {`© ${currentYear}`} <span className="text-white font-medium">Million Square Solutions</span>.
-                Dedicated Customer Success for Global SaaS.
+                {`© ${currentYear}`} <span className="text-white font-medium">Million Square Solutions</span>. Dedicated Customer Success for Global SaaS.
               </p>
               <div className="flex gap-4 mt-2 justify-center md:justify-end">
                 <button className="text-xs text-muted-foreground hover:text-primary transition-colors">Privacy</button>
