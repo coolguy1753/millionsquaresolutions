@@ -14,16 +14,18 @@ const Footer = () => {
     <footer className="relative bg-gradient-to-t from-background to-background/95 border-t border-white/10 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold futuristic-heading mb-4">
               Million Square Solutions
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed max-w-md">
-              A premium Customer Success & Retention agency. We help SaaS companies 
-              scale their post-sales operations through data-driven playbooks and elite CSM talent.
+              Dedicated Customer Success professionals for global SaaS businesses.
+              Fewer accounts per CSM, deeper relationships, and AI-driven workflows
+              that protect your revenue and grow your accounts.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-4">
               <div className="flex items-center text-muted-foreground group">
@@ -34,7 +36,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-muted-foreground group">
                 <Phone className="w-4 h-4 mr-3 text-primary group-hover:scale-110 transition-transform" />
-                <a href="tel:+91-9811813137" className="hover:text-primary transition-colors duration-300">
+                <a href="tel:+919811813137" className="hover:text-primary transition-colors duration-300">
                   +91-9811813137
                 </a>
               </div>
@@ -55,10 +57,11 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               {[
-                { name: 'Strategy', href: '#services' },
-                { name: 'CS Roadmap', href: '#industries' },
-                { name: 'Our Mission', href: '#about' },
-                { name: 'Contact Us', href: '#contact' }
+                { name: 'Home', href: '#home' },
+                { name: 'Meet the Founder', href: '#founder' },
+                { name: 'Our Services', href: '#services' },
+                { name: 'Case Studies', href: '#results' },
+                { name: 'Contact Us', href: '#contact' },
               ].map((link) => (
                 <li key={link.name}>
                   <button
@@ -85,7 +88,7 @@ const Footer = () => {
                 'Revenue Operations',
                 'NPS & Health Scoring',
                 'Customer Advocacy',
-                'Retention Strategy'
+                'Retention Strategy',
               ].map((service) => (
                 <li key={service} className="text-muted-foreground text-sm flex items-center gap-2">
                   <div className="w-1 h-1 bg-primary rounded-full"></div>
@@ -99,12 +102,11 @@ const Footer = () => {
         {/* Social Media & Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            {/* Social Media Links */}
             <div className="flex items-center gap-4">
               <span className="text-xs text-muted-foreground uppercase tracking-widest">Connect:</span>
-              <a
-                href="https://www.linkedin.com/company/millionsquaresolutions/" 
-                target="_blank" 
+              
+                href="https://www.linkedin.com/company/millionsquaresolutions/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full glass-morphism flex items-center justify-center text-muted-foreground hover:text-primary hover:neon-glow transition-all duration-300"
                 aria-label="LinkedIn"
@@ -112,25 +114,19 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
-
-            {/* Copyright & Legal */}
             <div className="text-center md:text-right">
               <p className="text-muted-foreground text-sm">
-                © {currentYear} <span className="text-white font-medium">Million Square Solutions</span>. 
-                Strategic Success Partner.
+                © {currentYear} <span className="text-white font-medium">Million Square Solutions</span>.
+                Dedicated Customer Success for Global SaaS.
               </p>
-              <div className="flex flex-wrap justify-center md:justify-end gap-6 mt-3 text-[10px] uppercase tracking-widest text-muted-foreground/60">
-                <button className="hover:text-primary transition-colors">Privacy</button>
-                <button className="hover:text-primary transition-colors">Terms</button>
-                <button className="hover:text-primary transition-colors">Security</button>
+              <div className="flex gap-4 mt-2 justify-center md:justify-end">
+                <button className="text-xs text-muted-foreground hover:text-primary transition-colors">Privacy</button>
+                <button className="text-xs text-muted-foreground hover:text-primary transition-colors">Terms</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Subtle background decoration */}
-      <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
     </footer>
   );
 };
