@@ -3,7 +3,6 @@ import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
 import FounderSection from './components/FounderSection';
 import ServicesSection from './components/ServicesSection';
-import AboutSection from './components/AboutSection';
 import IndustriesSection from './components/IndustriesSection';
 import CaseStudiesSection from './components/CaseStudiesSection';
 import ContactSection from './components/ContactSection';
@@ -19,7 +18,6 @@ function App() {
         <HeroSection />
         <FounderSection />
         <ServicesSection />
-        <AboutSection />
         <IndustriesSection />
         <CaseStudiesSection />
         <ContactSection />
