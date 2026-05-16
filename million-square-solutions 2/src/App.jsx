@@ -5,6 +5,7 @@ import FounderSection from './components/FounderSection';
 import ServicesSection from './components/ServicesSection';
 import AboutSection from './components/AboutSection';
 import IndustriesSection from './components/IndustriesSection';
+import CaseStudiesSection from './components/CaseStudiesSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import './App.css';
@@ -20,6 +21,7 @@ function App() {
         <ServicesSection />
         <AboutSection />
         <IndustriesSection />
+        <CaseStudiesSection />
         <ContactSection />
       </main>
       <Footer />
