@@ -15,7 +15,6 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
-          {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold futuristic-heading mb-4">
               Million Square Solutions
@@ -25,8 +24,6 @@ const Footer = () => {
               Fewer accounts per CSM, deeper relationships, and AI-driven workflows
               that protect your revenue and grow your accounts.
             </p>
-
-            {/* Contact Info */}
             <div className="space-y-4">
               <div className="flex items-center text-muted-foreground group">
                 <Mail className="w-4 h-4 mr-3 text-primary group-hover:scale-110 transition-transform" />
@@ -50,7 +47,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
               Navigation <div className="w-12 h-[1px] bg-primary/30"></div>
@@ -76,7 +72,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Specializations */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
               Focus Areas <div className="w-12 h-[1px] bg-primary/30"></div>
@@ -97,9 +92,9 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+
         </div>
 
-        {/* Social Media & Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-4">
@@ -126,6 +121,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
       </div>
     </footer>
   );
