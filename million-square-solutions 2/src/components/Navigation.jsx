@@ -16,7 +16,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
+    { name: 'Founder', href: '#founder' },
     { name: 'Services', href: '#services' },
     { name: 'Industries', href: '#industries' },
     { name: 'Contact', href: '#contact' },
@@ -107,4 +107,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
