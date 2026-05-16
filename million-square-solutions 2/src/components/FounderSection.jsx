@@ -114,8 +114,8 @@ const FounderSection = () => {
           </div>
         </div>
 
-        {/* Bottom 3 value cards */}
-        <div className="founder-values grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Bottom 4 value cards */}
+        <div className="founder-values grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="founder-value-card glass-morphism p-7 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-300 group">
             <div className="text-3xl mb-4">🎯</div>
             <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-primary transition-colors">Proven playbooks, not guesswork</h4>
@@ -130,6 +130,11 @@ const FounderSection = () => {
             <div className="text-3xl mb-4">🛡️</div>
             <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-primary transition-colors">A leader who has saved accounts others wrote off</h4>
             <p className="text-muted-foreground text-sm leading-relaxed">I've personally turned cancellation decisions into renewals. That experience shapes how every CSM we deploy handles your most at-risk accounts.</p>
+          </div>
+          <div className="founder-value-card glass-morphism p-7 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-300 group">
+            <div className="text-3xl mb-4">🏅</div>
+            <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-primary transition-colors">Oracle Certified AI Leadership</h4>
+            <p className="text-muted-foreground text-sm leading-relaxed">Oracle Certified Generative AI Professional — bringing world-class AI strategy and certified expertise directly into your CS operations.</p>
           </div>
         </div>
 
