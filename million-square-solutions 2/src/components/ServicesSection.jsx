@@ -44,7 +44,7 @@ const ServicesSection = () => {
   const services = [
     {
       title: "Managed CSM Teams",
-      description: "Elite, dedicated Customer Success Managers who integrate into your workflow to manage 100+ accounts seamlessly.",
+      description: "Dedicated Customer Success Managers managing 30–35 accounts each — giving your customers more attention, faster responses, and deeper relationships than the industry average.",
       icon: <Users className="w-8 h-8 text-primary" />,
       tag: "Core Offering"
     },
@@ -88,8 +88,8 @@ const ServicesSection = () => {
             Elite CSM Teams. AI-Driven Results.
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We don't just provide staff; we provide a high-performance Customer Success engine 
-            built on 13+ years of SaaS growth expertise.
+            We don't just provide staff; we provide a high-performance Customer Success engine
+            built on 10+ years of SaaS growth expertise.
           </p>
         </div>
 
