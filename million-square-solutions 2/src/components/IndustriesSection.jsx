@@ -1,26 +1,4 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
-
 const IndustriesSection = () => {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".industries-header", {
-        opacity: 0, y: 30, duration: 0.8,
-        scrollTrigger: { trigger: ".industries-header", start: "top bottom" }
-      });
-      gsap.from(".industry-card", {
-        opacity: 0, y: 20, duration: 0.5, stagger: 0.08,
-        scrollTrigger: { trigger: ".industries-grid", start: "top bottom" }
-      });
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
   const industries = [
     {
       icon: "⚙️",
@@ -61,10 +39,9 @@ const IndustriesSection = () => {
   ];
 
   return (
-    <section id="industries" ref={sectionRef} className="py-24 relative overflow-hidden">
+    <section id="industries" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div className="industries-header text-center mb-16">
+        <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-4">
             Who We Serve
           </div>
@@ -76,12 +53,11 @@ const IndustriesSection = () => {
             companies — so your customers never stop seeing value.
           </p>
         </div>
-
-        <div className="industries-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="industry-card glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-500 group"
+              className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-500 group"
             >
               <div className="text-4xl mb-4">{industry.icon}</div>
               <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
@@ -104,7 +80,6 @@ const IndustriesSection = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
