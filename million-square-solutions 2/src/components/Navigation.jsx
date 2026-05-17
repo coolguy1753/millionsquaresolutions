@@ -9,7 +9,6 @@ const Navigation = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -19,7 +18,6 @@ const Navigation = () => {
     { name: 'Founder', href: '#founder' },
     { name: 'Services', href: '#services' },
     { name: 'Industries', href: '#industries' },
-    { name: 'Contact', href: '#contact' },
   ];
 
   const scrollToSection = (href) => {
@@ -36,16 +34,14 @@ const Navigation = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+
           <div className="flex-shrink-0">
             <div className="text-2xl font-bold futuristic-heading">
               Million Square Solutions
             </div>
           </div>
 
-          {/* Right side items (Desktop Nav + Button) */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Desktop Navigation */}
             <div className="flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <button
@@ -58,8 +54,6 @@ const Navigation = () => {
                 </button>
               ))}
             </div>
-
-            {/* Contact Button */}
             <button
               onClick={() => scrollToSection('#contact')}
               className="btn-futuristic"
@@ -68,7 +62,6 @@ const Navigation = () => {
             </button>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -80,7 +73,6 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden glass-morphism backdrop-blur-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
