@@ -11,19 +11,19 @@ const FounderSection = () => {
     const ctx = gsap.context(() => {
       gsap.fromTo('.founder-photo', { opacity: 0, x: -50 }, {
         opacity: 1, x: 0, duration: 1, ease: 'power3.out',
-        scrollTrigger: { trigger: '.founder-photo', start: 'top 80%' }
+        scrollTrigger: { trigger: '.founder-photo', start: 'top 95%' }
       });
       gsap.fromTo('.founder-content > *', { opacity: 0, y: 30 }, {
         opacity: 1, y: 0, duration: 0.7, stagger: 0.15, ease: 'power3.out',
-        scrollTrigger: { trigger: '.founder-content', start: 'top 80%' }
+        scrollTrigger: { trigger: '.founder-content', start: 'top 95%' }
       });
       gsap.fromTo('.founder-cred-card', { opacity: 0, y: 20 }, {
         opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out',
-        scrollTrigger: { trigger: '.founder-creds', start: 'top 85%' }
+        scrollTrigger: { trigger: '.founder-creds', start: 'top 95%' }
       });
       gsap.fromTo('.founder-value-card', { opacity: 0, y: 20 }, {
         opacity: 1, y: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out',
-        scrollTrigger: { trigger: '.founder-values', start: 'top 85%' }
+        scrollTrigger: { trigger: '.founder-values', start: 'top 95%' }
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -35,7 +35,6 @@ const FounderSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Section label */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-4">
             The Person Behind This
@@ -46,10 +45,8 @@ const FounderSection = () => {
           </h2>
         </div>
 
-        {/* Main 2-col layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-12">
 
-          {/* Photo col */}
           <div className="founder-photo">
             <div className="relative rounded-2xl overflow-hidden glass-morphism border border-white/10 shadow-2xl">
               <img
@@ -66,7 +63,6 @@ const FounderSection = () => {
             </div>
           </div>
 
-          {/* Story col */}
           <div className="founder-content space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold text-white leading-snug">
               I didn't build a theory.<br />
@@ -78,10 +74,9 @@ const FounderSection = () => {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              At Experience.com, I was promoted from Individual Contributor to Manager in <strong className="text-white">13 months</strong> — by changing how CS was done. I built churn prediction frameworks, cut QBR prep time by 50% using GenAI, and sustained <strong className="text-white">100%+ Net Revenue Retention</strong> across 150+ SaaS accounts.
+              I have built and led CSM teams managing <strong className="text-white">150+ SaaS accounts</strong> — building churn prediction frameworks, cutting QBR prep time by 50% using GenAI, and sustaining <strong className="text-white">100%+ Net Revenue Retention</strong> consistently across complex mid-market portfolios.
             </p>
 
-            {/* Blockquote */}
             <div className="border-l-2 border-primary pl-6 py-2 bg-primary/5 rounded-r-xl">
               <p className="text-white italic font-serif text-lg leading-relaxed">
                 "Million Square Solutions exists because I know exactly what great CS looks like — and I know most companies never get it. I built this to close that gap."
@@ -92,7 +87,6 @@ const FounderSection = () => {
               When you work with us, you're not getting a generic outsourcing firm. You're getting a team <strong className="text-white">built, trained, and led by someone who has lived the exact problems your customers face</strong> — and knows how to solve them.
             </p>
 
-            {/* Credential numbers */}
             <div className="founder-creds grid grid-cols-2 gap-4 pt-2">
               <div className="founder-cred-card glass-morphism p-5 rounded-xl text-center neon-glow">
                 <div className="text-2xl font-bold text-primary mb-1">10+</div>
@@ -107,14 +101,13 @@ const FounderSection = () => {
                 <div className="text-xs text-muted-foreground uppercase tracking-wider">SaaS Accounts Led</div>
               </div>
               <div className="founder-cred-card glass-morphism p-5 rounded-xl text-center neon-glow">
-                <div className="text-2xl font-bold text-primary mb-1">13 mo</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">IC to Manager</div>
+                <div className="text-2xl font-bold text-primary mb-1">5+</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider">Years Leading CS Teams</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom 4 value cards */}
         <div className="founder-values grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="founder-value-card glass-morphism p-7 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-300 group">
             <div className="text-3xl mb-4">🎯</div>
