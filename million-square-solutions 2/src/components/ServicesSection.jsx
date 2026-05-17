@@ -12,15 +12,13 @@ const ServicesSection = () => {
     const ctx = gsap.context(() => {
       gsap.from(".service-header", {
         opacity: 0, y: 30, duration: 0.8,
-        scrollTrigger: { trigger: ".service-header", start: "top 95%" }
+        scrollTrigger: { trigger: ".service-header", start: "top bottom" }
       });
-
       gsap.from(".service-card", {
         opacity: 0, y: 30, duration: 0.6, stagger: 0.1,
-        scrollTrigger: { trigger: ".services-grid", start: "top 95%" }
+        scrollTrigger: { trigger: ".services-grid", start: "top bottom" }
       });
     }, sectionRef);
-
     return () => ctx.revert();
   }, []);
 
@@ -75,7 +73,6 @@ const ServicesSection = () => {
             built on 10+ years of SaaS growth expertise.
           </p>
         </div>
-
         <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
@@ -89,9 +86,7 @@ const ServicesSection = () => {
                 {service.icon}
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
+              <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>
