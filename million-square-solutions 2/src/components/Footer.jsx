@@ -8,23 +8,23 @@ const Footer = () => {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const openLinkedIn = () => {
+    window.open('https://www.linkedin.com/company/millionsquaresolutions/', '_blank');
+  };
+
   return (
     <footer className="relative overflow-hidden">
 
-      {/* Gradient top border */}
       <div className="h-px w-full" style={{ background: 'linear-gradient(90deg, transparent, #22d3ee, #a855f7, #22d3ee, transparent)' }}></div>
 
-      {/* Glass background */}
       <div className="relative" style={{ background: 'rgba(7,17,31,0.85)', backdropFilter: 'blur(20px)' }}>
 
-        {/* Subtle glow */}
         <div className="absolute inset-0 pointer-events-none" style={{ background: 'radial-gradient(ellipse 60% 40% at 50% 0%, rgba(34,211,238,0.04), transparent)' }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
-            {/* Company */}
             <div className="lg:col-span-2">
               <div className="text-2xl font-bold futuristic-heading mb-4">
                 Million Square Solutions
@@ -42,7 +42,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Navigation */}
             <div>
               <h3 className="text-sm font-semibold text-white mb-6 uppercase tracking-widest">Navigation</h3>
               <ul className="space-y-3">
@@ -66,7 +65,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Focus Areas */}
             <div>
               <h3 className="text-sm font-semibold text-white mb-6 uppercase tracking-widest">Focus Areas</h3>
               <ul className="space-y-3">
@@ -88,21 +86,18 @@ const Footer = () => {
 
           </div>
 
-          {/* Bottom bar */}
           <div className="mt-14 pt-8" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
 
               <div className="flex items-center gap-4">
                 <span className="text-xs text-muted-foreground uppercase tracking-widest">Connect:</span>
-                
-                  href="https://www.linkedin.com/company/millionsquaresolutions/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={openLinkedIn}
                   className="w-9 h-9 rounded-full flex items-center justify-center text-muted-foreground hover:text-primary transition-all"
                   style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
                 >
                   <Linkedin className="w-4 h-4" />
-                </a>
+                </button>
               </div>
 
               <div className="text-center md:text-right">
