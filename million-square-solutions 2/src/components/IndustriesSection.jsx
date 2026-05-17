@@ -3,7 +3,7 @@ const IndustriesSection = () => {
     {
       icon: "⚙️",
       title: "SaaS & Software Companies",
-      description: "Our primary focus. We help B2B SaaS businesses across the US, UK, Canada, UAE, and New Zealand drive product adoption, reduce churn, and grow NRR through dedicated customer success managers who become a true extension of your team.",
+      description: "Our primary focus. We help B2B SaaS businesses across the US, UK, Canada, UAE, Australia, and New Zealand drive product adoption, reduce churn, and grow NRR through dedicated customer success managers who become a true extension of your team.",
       metrics: ["Onboarding & Adoption", "Renewal Management", "Expansion Revenue"]
     },
     {
@@ -33,7 +33,7 @@ const IndustriesSection = () => {
     {
       icon: "👥",
       title: "HR Tech & WorkTech",
-      description: "Driving adoption across HR platforms, talent tools, and workforce solutions — ensuring your B2B clients get measurable ROI from their investment and renew year after year.",
+      description: "Driving adoption across HR platforms, talent tools, and workforce solutions — ensuring your B2B clients in the US, UK, Australia and beyond get measurable ROI from their investment and renew year after year.",
       metrics: ["User Activation", "Executive QBRs", "Churn Prevention"]
     }
   ];
@@ -49,22 +49,15 @@ const IndustriesSection = () => {
             Industries We Specialize In
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We bring dedicated customer success outsourcing expertise to high-growth B2B technology companies across the US, UK, Canada, UAE, and New Zealand — so your customers never stop seeing value.
+            We bring dedicated customer success outsourcing expertise to high-growth B2B technology companies across the US, UK, Canada, UAE, Australia, and New Zealand — so your customers never stop seeing value.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {industries.map((industry, index) => (
-            <div
-              key={index}
-              className="glass-morphism p-8 rounded-2xl neon-glow border border-white/10 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 group"
-            >
+            <div key={index} className="glass-morphism p-8 rounded-2xl neon-glow border border-white/10 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 group">
               <div className="text-4xl mb-4">{industry.icon}</div>
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
-                {industry.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4 text-sm">
-                {industry.description}
-              </p>
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">{industry.title}</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4 text-sm">{industry.description}</p>
               <div className="border-t border-white/10 pt-4">
                 <p className="text-xs text-primary font-semibold uppercase tracking-widest mb-2">Focus Areas:</p>
                 <ul className="space-y-1">
