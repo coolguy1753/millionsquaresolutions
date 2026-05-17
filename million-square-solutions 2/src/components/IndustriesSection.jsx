@@ -11,11 +11,11 @@ const IndustriesSection = () => {
     const ctx = gsap.context(() => {
       gsap.from(".industries-header", {
         opacity: 0, y: 30, duration: 0.8,
-        scrollTrigger: { trigger: ".industries-header", start: "top 95%" }
+        scrollTrigger: { trigger: ".industries-header", start: "top bottom" }
       });
       gsap.from(".industry-card", {
         opacity: 0, y: 20, duration: 0.5, stagger: 0.08,
-        scrollTrigger: { trigger: ".industries-grid", start: "top 95%" }
+        scrollTrigger: { trigger: ".industries-grid", start: "top bottom" }
       });
     }, sectionRef);
     return () => ctx.revert();
@@ -23,40 +23,40 @@ const IndustriesSection = () => {
 
   const industries = [
     {
-      icon: "💻",
-      title: "Vertical SaaS",
-      description: "Driving deep adoption for industry-specific software. We help vertical SaaS firms manage complex user journeys and reduce high-touch churn.",
-      metrics: ["Success Playbooks", "Niche Onboarding"]
+      icon: "⚙️",
+      title: "SaaS & Software Companies",
+      description: "Our primary focus. We help SaaS businesses drive product adoption, reduce churn, and grow NRR through dedicated CS professionals who become a true extension of your team.",
+      metrics: ["Onboarding & Adoption", "Renewal Management", "Expansion Revenue"]
     },
     {
-      icon: "🛡️",
+      icon: "🏦",
       title: "FinTech & RegTech",
-      description: "Managing high-stakes client relationships where security and compliance are paramount. We ensure your users feel supported and secure.",
-      metrics: ["Trust-Based CS", "Compliance Monitoring"]
-    },
-    {
-      icon: "🛒",
-      title: "E-commerce Tech",
-      description: "Optimizing the customer lifecycle for Shopify apps, martech tools, and inventory platforms to drive predictable renewals.",
-      metrics: ["Expansion Sales", "Health Tracking"]
+      description: "Managing high-stakes client relationships where trust, compliance, and precision are non-negotiable. We ensure your users feel confident and supported at every stage.",
+      metrics: ["Trust-Based CS", "Compliance Monitoring", "Risk-Aware Engagement"]
     },
     {
       icon: "🤖",
-      title: "AI & Infrastructure",
-      description: "Helping technical founders translate complex AI features into tangible business outcomes for their end users.",
-      metrics: ["Technical Success", "Usage Analytics"]
+      title: "AI & Automation Platforms",
+      description: "Helping AI-first companies translate complex technology into clear customer outcomes — driving adoption among users who need guidance to unlock full product value.",
+      metrics: ["Technical Onboarding", "Feature Adoption", "ROI Demonstration"]
     },
     {
-      icon: "📊",
-      title: "Data & Analytics",
-      description: "Ensuring users extract maximum value from data platforms, turning complex dashboards into actionable business insights.",
-      metrics: ["Adoption Strategy", "ROI Reporting"]
+      icon: "💻",
+      title: "IT Services & Consulting",
+      description: "Supporting IT service providers with structured CS operations that maintain client satisfaction, reduce project churn, and build long-term account relationships.",
+      metrics: ["Account Health Scoring", "Stakeholder Management", "Renewal Strategy"]
     },
     {
-      icon: "🌐",
-      title: "Global Marketplaces",
-      description: "Scaling support and success operations for double-sided marketplaces that require 24/7 strategic oversight.",
-      metrics: ["Scale Ops", "Global CS Talent"]
+      icon: "🔗",
+      title: "CRM & ERP Solution Providers",
+      description: "Deep domain expertise in managing complex, high-touch implementations. We help your clients realize full platform value and expand usage across their organization.",
+      metrics: ["Implementation Support", "Power User Development", "Cross-sell Enablement"]
+    },
+    {
+      icon: "👥",
+      title: "HR Tech & WorkTech",
+      description: "Driving adoption across HR platforms, talent tools, and workforce solutions — ensuring your clients get measurable ROI from their investment in people technology.",
+      metrics: ["User Activation", "Executive QBRs", "Churn Prevention"]
     }
   ];
 
@@ -69,11 +69,11 @@ const IndustriesSection = () => {
             Who We Serve
           </div>
           <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">
-            SaaS Segments We Empower
+            Industries We Specialize In
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We specialize in high-growth technology sectors, bringing domain-specific Customer
-            Success frameworks to ensure your users never stop growing.
+            We bring domain-specific Customer Success expertise to high-growth B2B technology
+            companies — so your customers never stop seeing value.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ const IndustriesSection = () => {
                 {industry.description}
               </p>
               <div className="border-t border-white/10 pt-4">
-                <p className="text-xs text-primary font-semibold uppercase tracking-widest mb-2">Success Metrics:</p>
+                <p className="text-xs text-primary font-semibold uppercase tracking-widest mb-2">Focus Areas:</p>
                 <ul className="space-y-1">
                   {industry.metrics.map((metric, i) => (
                     <li key={i} className="text-xs text-muted-foreground flex items-center gap-2">
