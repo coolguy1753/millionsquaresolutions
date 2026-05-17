@@ -1,8 +1,6 @@
-import { useRef } from 'react';
-
 const FounderSection = () => {
   return (
-    <section id="founder" className="relative py-24 overflow-hidden">
+    <section id="founder" className="relative py-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-secondary/10"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,9 +16,8 @@ const FounderSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-10">
-
           <div>
-            <div className="relative rounded-2xl overflow-hidden glass-morphism border border-white/10 shadow-2xl transition-all duration-500 hover:border-primary/40 hover:shadow-primary/10">
+            <div className="relative rounded-2xl overflow-hidden glass-morphism border border-white/10 shadow-2xl transition-all duration-500 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1">
               <img
                 src="/founder.jpg"
                 alt="Balbir Singh — Founder"
@@ -65,7 +62,7 @@ const FounderSection = () => {
             { num: '150+', label: 'SaaS Accounts Led', color: 'text-secondary' },
             { num: '5+', label: 'Years Leading CS Teams', color: 'text-primary' },
           ].map((item, i) => (
-            <div key={i} className="glass-morphism p-5 rounded-xl text-center border border-white/10 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div key={i} className="glass-morphism p-5 rounded-xl text-center neon-glow border border-white/10 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1">
               <div className={`text-2xl font-bold mb-1 ${item.color}`}>{item.num}</div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">{item.label}</div>
             </div>
@@ -80,7 +77,7 @@ const FounderSection = () => {
             { icon: '🛡️', title: 'A leader who has saved accounts others wrote off', text: "I've personally turned cancellation decisions into renewals. That experience shapes how every CSM we deploy handles your most at-risk accounts." },
             { icon: '🏅', title: 'Oracle Certified AI Leadership', text: 'Oracle Certified Generative AI Professional — bringing world-class AI strategy and certified expertise directly into your CS operations.' },
           ].map((card, i) => (
-            <div key={i} className="glass-morphism p-7 rounded-2xl border border-white/10 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2 group">
+            <div key={i} className="glass-morphism p-7 rounded-2xl neon-glow border border-white/10 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 group">
               <div className="text-3xl mb-4">{card.icon}</div>
               <h4 className="text-white font-semibold text-lg mb-3 group-hover:text-primary transition-colors">{card.title}</h4>
               <p className="text-muted-foreground text-sm leading-relaxed">{card.text}</p>
