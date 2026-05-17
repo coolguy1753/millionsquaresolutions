@@ -7,34 +7,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ServicesSection = () => {
   const sectionRef = useRef(null);
-  const cardsRef = useRef([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(".service-header", {
-        opacity: 0,
-        y: 30,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".service-header",
-          start: "top 80%",
-        }
+        opacity: 0, y: 30, duration: 0.8,
+        scrollTrigger: { trigger: ".service-header", start: "top 95%" }
       });
 
-      cardsRef.current.forEach((card, index) => {
-        gsap.fromTo(card,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            delay: index * 0.2,
-            scrollTrigger: {
-              trigger: card,
-              start: "top 85%",
-            }
-          }
-        );
+      gsap.from(".service-card", {
+        opacity: 0, y: 30, duration: 0.6, stagger: 0.1,
+        scrollTrigger: { trigger: ".services-grid", start: "top 95%" }
       });
     }, sectionRef);
 
@@ -93,12 +76,11 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              ref={el => cardsRef.current[index] = el}
-              className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-500 group relative"
+              className="service-card glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-500 group relative"
             >
               <div className="absolute top-4 right-6 text-[10px] uppercase tracking-widest text-primary/60 font-bold">
                 {service.tag}
