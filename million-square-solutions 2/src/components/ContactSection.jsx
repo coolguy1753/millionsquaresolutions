@@ -42,7 +42,7 @@ const ContactSection = () => {
             Scale Your Customer Success
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to outsource your customer success operations? Let's discuss how our dedicated CSM teams can reduce churn and drive predictable NRR for your SaaS business — whether you're based in the US, UK, Canada, UAE, or New Zealand.
+            Ready to outsource your customer success operations? Let's discuss how our dedicated CSM teams can reduce churn and drive predictable NRR for your SaaS business — whether you're based in the US, UK, Canada, UAE, Australia, or New Zealand.
           </p>
         </div>
 
@@ -131,7 +131,7 @@ const ContactSection = () => {
                 <a href="tel:+919811813137" className="text-accent hover:text-white transition-colors">
                   +91-9811813137
                 </a>
-                <p className="text-muted-foreground text-xs mt-1">India HQ — serving US, UK, Canada, UAE & NZ clients</p>
+                <p className="text-muted-foreground text-xs mt-1">India HQ — serving US, UK, Canada, UAE, Australia & NZ</p>
               </div>
             </div>
 
@@ -162,7 +162,7 @@ const ContactSection = () => {
                   <span className="text-white font-medium text-sm">9:00 AM - 9:00 PM</span>
                 </div>
                 <p className="text-xs text-primary italic mt-2">
-                  *Our dedicated CSM teams align with your time zones — EST, PST, GMT, GST.
+                  *Our dedicated CSM teams align with your time zones — EST, PST, GMT, GST, AEST.
                 </p>
               </div>
             </div>
