@@ -1,27 +1,6 @@
-import { useEffect, useRef } from 'react';
 import { Users, Zap, BarChart3, ShieldCheck, Database, BrainCircuit } from 'lucide-react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const ServicesSection = () => {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.from(".service-header", {
-        opacity: 0, y: 30, duration: 0.8,
-        scrollTrigger: { trigger: ".service-header", start: "top bottom" }
-      });
-      gsap.from(".service-card", {
-        opacity: 0, y: 30, duration: 0.6, stagger: 0.1,
-        scrollTrigger: { trigger: ".services-grid", start: "top bottom" }
-      });
-    }, sectionRef);
-    return () => ctx.revert();
-  }, []);
-
   const services = [
     {
       title: "Managed CSM Teams",
@@ -62,9 +41,9 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="py-24 relative overflow-hidden">
+    <section id="services" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="service-header text-center mb-20">
+        <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">
             Elite CSM Teams. AI-Driven Results.
           </h2>
@@ -73,11 +52,11 @@ const ServicesSection = () => {
             built on 10+ years of SaaS growth expertise.
           </p>
         </div>
-        <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="service-card glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-500 group relative"
+              className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-500 group relative"
             >
               <div className="absolute top-4 right-6 text-[10px] uppercase tracking-widest text-primary/60 font-bold">
                 {service.tag}
