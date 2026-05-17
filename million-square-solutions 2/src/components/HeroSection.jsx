@@ -8,7 +8,6 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16 overflow-hidden">
-
       <div className="relative z-10 max-w-5xl mx-auto">
 
         <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-6">
@@ -27,7 +26,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-base text-muted-foreground/70 max-w-2xl mx-auto mb-10">
-          Trusted by SaaS companies across the <strong className="text-white/80">US, UK, Canada, UAE and New Zealand</strong> to reduce churn, improve NRR, and scale customer success operations without hiring in-house.
+          Trusted by SaaS companies across the <strong className="text-white/80">US, UK, Canada, UAE, Australia and New Zealand</strong> to reduce churn, improve NRR, and scale customer success operations without hiring in-house.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
