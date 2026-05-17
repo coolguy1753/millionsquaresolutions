@@ -51,21 +51,14 @@ const ServicesSection = () => {
             Elite CSM Teams. AI-Driven Results.
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We don't just provide staff — we provide a fully managed customer success outsourcing engine built on 10+ years of B2B SaaS expertise, serving companies across the US, UK, Canada, UAE, and New Zealand.
+            We don't just provide staff — we provide a fully managed customer success outsourcing engine built on 10+ years of B2B SaaS expertise, serving companies across the US, UK, Canada, UAE, Australia, and New Zealand.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="glass-morphism p-8 rounded-2xl neon-glow border border-white/10 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 group relative"
-            >
-              <div className="absolute top-4 right-6 text-[10px] uppercase tracking-widest text-primary/60 font-bold">
-                {service.tag}
-              </div>
-              <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
-              </div>
+            <div key={index} className="glass-morphism p-8 rounded-2xl neon-glow border border-white/10 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 group relative">
+              <div className="absolute top-4 right-6 text-[10px] uppercase tracking-widest text-primary/60 font-bold">{service.tag}</div>
+              <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
               <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>
             </div>
