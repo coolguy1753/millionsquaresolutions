@@ -15,25 +15,20 @@ const Footer = () => {
   return (
     <footer className="relative overflow-hidden">
 
-      {/* Gradient top border */}
-      <div style={{ height: '2px', background: 'linear-gradient(90deg, transparent 0%, #22d3ee 30%, #a855f7 50%, #22d3ee 70%, transparent 100%)' }}></div>
+      <div style={{ height: '2px', background: 'linear-gradient(90deg, transparent 0%, #22d3ee 25%, #a855f7 50%, #22d3ee 75%, transparent 100%)' }}></div>
 
-      <div style={{ background: 'rgba(5,12,24,0.95)', backdropFilter: 'blur(20px)' }}>
+      <div style={{ background: 'rgba(5,12,24,0.97)' }}>
 
-        {/* Subtle top glow */}
-        <div className="absolute left-0 right-0 top-0 h-32 pointer-events-none" style={{ background: 'radial-gradient(ellipse 50% 100% at 50% 0%, rgba(34,211,238,0.05), transparent)' }}></div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-10">
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-14 pb-10">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
 
-          {/* 3 equal columns */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-
-            {/* Col 1 — Company */}
-            <div>
-              <div className="text-xl font-bold futuristic-heading mb-4">
+            {/* Col 1 — Company — 5 cols */}
+            <div className="md:col-span-5">
+              <div className="text-xl font-bold futuristic-heading mb-3">
                 Million Square Solutions
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-5 max-w-xs">
                 Dedicated Customer Success professionals for global SaaS businesses — fewer accounts, deeper relationships, AI-driven workflows.
               </p>
               <div className="flex items-center gap-3 text-muted-foreground">
@@ -44,8 +39,8 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Col 2 — Navigation */}
-            <div>
+            {/* Col 2 — Navigation — 3 cols */}
+            <div className="md:col-span-3">
               <h3 className="text-xs font-semibold text-white mb-5 uppercase tracking-[0.2em]">Navigation</h3>
               <ul className="space-y-3">
                 {[
@@ -58,7 +53,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <button
                       onClick={() => scrollToSection(link.href)}
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1 group text-left"
                     >
                       <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-all flex-shrink-0" />
                       {link.name}
@@ -68,8 +63,8 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Col 3 — Focus Areas */}
-            <div>
+            {/* Col 3 — Focus Areas — 4 cols */}
+            <div className="md:col-span-4">
               <h3 className="text-xs font-semibold text-white mb-5 uppercase tracking-[0.2em]">Focus Areas</h3>
               <ul className="space-y-3">
                 {[
@@ -93,24 +88,20 @@ const Footer = () => {
           {/* Bottom bar */}
           <div className="mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4" style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}>
 
-            {/* Left — LinkedIn */}
-            <div className="flex items-center gap-3">
-              <span className="text-xs text-muted-foreground uppercase tracking-[0.15em]">Connect</span>
-              <button
-                onClick={openLinkedIn}
-                className="w-8 h-8 rounded-full flex items-center justify-center text-muted-foreground hover:text-primary transition-all"
-                style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)' }}
-              >
+            <button
+              onClick={openLinkedIn}
+              className="flex items-center gap-2 text-xs text-muted-foreground hover:text-primary transition-colors group"
+            >
+              <div className="w-8 h-8 rounded-full flex items-center justify-center group-hover:border-primary/40 transition-all" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)' }}>
                 <Linkedin className="w-4 h-4" />
-              </button>
-            </div>
+              </div>
+              LinkedIn
+            </button>
 
-            {/* Center — Copyright */}
             <p className="text-xs text-muted-foreground text-center">
               © {currentYear} <span className="text-white font-medium">Million Square Solutions</span>. Dedicated Customer Success for Global SaaS.
             </p>
 
-            {/* Right — Privacy & Terms */}
             <div className="flex items-center gap-4">
               <button className="text-xs text-muted-foreground hover:text-primary transition-colors">Privacy</button>
               <button className="text-xs text-muted-foreground hover:text-primary transition-colors">Terms</button>
