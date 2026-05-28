@@ -2,14 +2,36 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About Million Square Solutions",
+  url: "https://www.millionsquaresolutions.com/about",
+  description: "Million Square Solutions was founded by Balbir Singh, a 10+ year B2B SaaS Customer Success veteran. We provide dedicated CSM teams for global SaaS businesses.",
+  mainEntity: {
+    "@type": "Person",
+    name: "Balbir Singh",
+    jobTitle: "Founder and Customer Success Leader",
+    worksFor: {
+      "@type": "Organization",
+      name: "Million Square Solutions",
+      url: "https://www.millionsquaresolutions.com",
+    },
+    sameAs: "https://www.linkedin.com/in/balbirsingh1990",
+    knowsAbout: ["Customer Success", "SaaS Retention", "Churn Reduction", "NRR Optimization", "CRM Architecture", "AI in Customer Success"],
+    description: "10+ years of B2B SaaS Customer Success experience. Built and led CSM teams managing 150+ SaaS accounts. Oracle Certified Generative AI Professional.",
+  },
+};
+
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Million Square Solutions — Founded by Balbir Singh, a 10+ year B2B SaaS Customer Success veteran.",
+  description: "Million Square Solutions, founded by Balbir Singh, a 10+ year B2B SaaS Customer Success veteran. Learn about our mission, values and approach to CS outsourcing.",
 };
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navigation />
       <main className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

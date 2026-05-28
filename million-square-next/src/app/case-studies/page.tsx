@@ -2,14 +2,45 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Case Studies — Million Square Solutions",
+  url: "https://www.millionsquaresolutions.com/case-studies",
+  description: "Real customer success results — churn reduction, NRR improvement and retention recovery for global SaaS businesses.",
+  publisher: {
+    "@type": "Organization",
+    name: "Million Square Solutions",
+    url: "https://www.millionsquaresolutions.com",
+  },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Regional Bank Mortgage Division — 190% Review Growth",
+        description: "Designed and launched a targeted Google Review campaign resulting in 190% total review growth and 4.94 average Google rating.",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Mortgage Company Retention Recovery",
+        description: "Within 3 months, reversed a cancellation decision and renewed the contract through senior CSM ownership and full account audit.",
+      },
+    ],
+  },
+};
+
 export const metadata: Metadata = {
   title: "Case Studies",
-  description: "Real customer success results — churn reduction, NRR improvement and retention recovery for global SaaS businesses.",
+  description: "Real customer success results — churn reduction, NRR improvement and retention recovery for global SaaS businesses across US, UK, Canada, UAE, Australia and New Zealand.",
 };
 
 export default function CaseStudiesPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navigation />
       <main className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
