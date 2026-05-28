@@ -13,16 +13,20 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Founder', href: '#founder' },
-    { name: 'Services', href: '#services' },
-    { name: 'Industries', href: '#industries' },
-    { name: 'Case Studies', href: '#results' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Case Studies', href: '/case-studies' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) element.scrollIntoView({ behavior: 'smooth' });
+    if (href.startsWith('/')) {
+      window.location.href = href;
+    } else {
+      const element = document.querySelector(href);
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
+    }
     setIsOpen(false);
   };
 
