@@ -15,8 +15,7 @@ const posts: Record<string, {
     description: "A complete guide to CS outsourcing — what it is, how it works, and why global SaaS companies are choosing it over in-house CS teams.",
     tag: "CS Outsourcing",
     readTime: "8 min read",
-    content: `
-Customer Success outsourcing is the practice of hiring a third-party provider to manage your customer success operations — including dedicated Customer Success Managers, onboarding, retention, and expansion activities.
+    content: `Customer Success outsourcing is the practice of hiring a third-party provider to manage your customer success operations — including dedicated Customer Success Managers, onboarding, retention, and expansion activities.
 
 ## Why SaaS Companies Outsource Customer Success
 
@@ -26,38 +25,22 @@ Customer Success outsourcing gives SaaS companies access to experienced CSMs imm
 
 ## What Does a CS Outsourcing Provider Do?
 
-A quality CS outsourcing provider like Million Square Solutions provides:
-
-- Dedicated CSMs assigned to your accounts
-- Structured onboarding programs for new customers
-- Regular QBRs and EBRs with key stakeholders
-- Churn risk identification and intervention
-- Expansion and upsell opportunity management
-- CRM management and health scoring
+A quality CS outsourcing provider like Million Square Solutions provides dedicated CSMs assigned to your accounts, structured onboarding programs, regular QBRs and EBRs, churn risk identification, expansion management, and CRM health scoring.
 
 ## Who Should Consider CS Outsourcing?
 
-CS outsourcing works best for SaaS companies that:
-
-- Are scaling faster than they can hire
-- Need experienced CS coverage across multiple timezones
-- Want to reduce CAC and improve NRR without adding headcount
-- Are entering new markets (US, UK, Canada, UAE, Australia, New Zealand)
+CS outsourcing works best for SaaS companies that are scaling faster than they can hire, need experienced CS coverage across multiple timezones, want to reduce CAC and improve NRR without adding headcount, or are entering new markets across the US, UK, Canada, UAE, Australia, and New Zealand.
 
 ## How to Choose a CS Outsourcing Partner
 
-Look for providers with proven SaaS experience, transparent pricing, and a low CSM-to-account ratio. At Million Square Solutions, our CSMs manage 30-35 accounts — compared to the industry average of 50-80.
-
-This means your customers get more attention, faster responses, and deeper relationships.
-    `,
+Look for providers with proven SaaS experience, transparent pricing, and a low CSM-to-account ratio. At Million Square Solutions, our CSMs manage 30-35 accounts compared to the industry average of 50-80. This means your customers get more attention, faster responses, and deeper relationships.`,
   },
   "customer-success-as-a-service": {
     title: "Customer Success as a Service — Complete Guide",
     description: "Everything you need to know about CSaaS — the model, benefits, pricing, and how to choose the right provider for your SaaS business.",
     tag: "CSaaS",
     readTime: "10 min read",
-    content: `
-Customer Success as a Service (CSaaS) is a managed service model where a specialized provider delivers end-to-end customer success operations for your SaaS business — on a subscription basis.
+    content: `Customer Success as a Service (CSaaS) is a managed service model where a specialized provider delivers end-to-end customer success operations for your SaaS business on a subscription basis.
 
 ## CSaaS vs Traditional CS Outsourcing
 
@@ -65,42 +48,32 @@ Traditional outsourcing often means body-shopping — hiring cheap agents to han
 
 ## The CSaaS Model Explained
 
-A CSaaS engagement typically includes:
-
-- Dedicated CSMs with SaaS domain expertise
-- AI-powered health scoring and churn prediction
-- Structured playbooks for onboarding, QBRs, and renewals
-- CRM architecture and workflow design
-- Regular reporting on NRR, churn rate, and expansion revenue
+A CSaaS engagement typically includes dedicated CSMs with SaaS domain expertise, AI-powered health scoring and churn prediction, structured playbooks for onboarding and renewals, CRM architecture and workflow design, and regular reporting on NRR, churn rate, and expansion revenue.
 
 ## Benefits of Customer Success as a Service
 
-### 1. Immediate Expertise
+### Immediate Expertise
 No ramp time. Our CSMs have managed SaaS portfolios across HR Tech, FinTech, MarTech, and more.
 
-### 2. Lower Cost Than In-House
+### Lower Cost Than In-House
 A fully managed CSM team costs significantly less than hiring, training, and retaining in-house staff.
 
-### 3. AI-Native Operations
+### AI-Native Operations
 Every CSM at Million Square Solutions is equipped with GenAI tools — reducing QBR prep time by 50% and improving churn prediction accuracy.
 
-### 4. Global Coverage
-We serve SaaS companies across the US, UK, Canada, UAE, Australia and New Zealand — with timezone-appropriate coverage built in.
+### Global Coverage
+We serve SaaS companies across the US, UK, Canada, UAE, Australia and New Zealand with timezone-appropriate coverage built in.
 
 ## Is CSaaS Right for Your Business?
 
-If your SaaS company has more than 50 accounts and is struggling with churn, renewal management, or expansion revenue — CSaaS is worth exploring.
-
-Book a free strategy call with Million Square Solutions to see how we can improve your NRR within 90 days.
-    `,
+If your SaaS company has more than 50 accounts and is struggling with churn, renewal management, or expansion revenue — CSaaS is worth exploring. Book a free strategy call with Million Square Solutions to see how we can improve your NRR within 90 days.`,
   },
   "how-to-reduce-saas-churn": {
     title: "How to Reduce SaaS Churn in 90 Days",
     description: "A proven 90-day framework to identify churn risk, engage at-risk accounts, and build retention systems that protect your recurring revenue.",
     tag: "Churn Reduction",
     readTime: "9 min read",
-    content: `
-Churn is the single biggest threat to SaaS growth. Even a 5% monthly churn rate means you are replacing your entire customer base every 20 months. Here is a proven 90-day framework to reduce churn and protect your recurring revenue.
+    content: `Churn is the single biggest threat to SaaS growth. Even a 5% monthly churn rate means you are replacing your entire customer base every 20 months. Here is a proven 90-day framework to reduce churn and protect your recurring revenue.
 
 ## Days 1-30: Audit and Identify
 
@@ -123,9 +96,6 @@ Assign a senior CSM to every at-risk account. Schedule an emergency QBR to under
 ### Fix the Most Common Complaints
 If multiple at-risk accounts cite the same issue, escalate it to your product or support team immediately.
 
-### Build Cancellation Intervention Playbooks
-Create a structured process for what happens when a customer submits a cancellation request — who owns it, what they say, and what they offer.
-
 ## Days 61-90: Build Systems
 
 ### Implement Automated Health Monitoring
@@ -135,33 +105,22 @@ Set up alerts in your CRM for accounts that drop below your health score thresho
 Every account above a certain ARR should have a structured quarterly or executive business review.
 
 ### Measure and Iterate
-Track your churn rate weekly. By day 90, you should see measurable improvement if the framework has been executed properly.
-
-## The Bottom Line
-
-Reducing churn is not a one-time project. It is an ongoing operational discipline. If your team does not have the bandwidth or expertise to execute this framework, consider partnering with a CS outsourcing provider.
-    `,
+Track your churn rate weekly. By day 90, you should see measurable improvement if the framework has been executed properly.`,
   },
   "csm-account-ratio": {
     title: "CSM to Account Ratio — What is Ideal for SaaS?",
     description: "The industry runs CSMs at 50-80 accounts. We explain why 30-35 is the sweet spot and how the right ratio directly impacts your NRR.",
     tag: "CS Operations",
     readTime: "6 min read",
-    content: `
-The CSM-to-account ratio is one of the most important — and most overlooked — variables in Customer Success. Get it wrong, and your CSMs are overwhelmed, your customers are neglected, and your churn rate climbs.
+    content: `The CSM-to-account ratio is one of the most important and most overlooked variables in Customer Success. Get it wrong, and your CSMs are overwhelmed, your customers are neglected, and your churn rate climbs.
 
 ## What is the Industry Average?
 
-Most SaaS companies run their CSMs at 50-80 accounts. Some high-volume, low-touch models push this to 100+ accounts per CSM.
-
-The result? Reactive CS. CSMs spend their time firefighting rather than building relationships, identifying expansion opportunities, or proactively preventing churn.
+Most SaaS companies run their CSMs at 50-80 accounts. Some high-volume, low-touch models push this to 100+ accounts per CSM. The result is reactive CS where CSMs spend their time firefighting rather than building relationships or preventing churn.
 
 ## Why 30-35 Accounts is the Sweet Spot
 
-At Million Square Solutions, our CSMs manage 30-35 accounts. Here is why this ratio works:
-
-### More Time Per Customer
-At 80 accounts, a CSM has roughly 30 minutes per account per week. At 35 accounts, they have over an hour. That extra time means more QBRs, more proactive outreach, and stronger relationships.
+At Million Square Solutions, our CSMs manage 30-35 accounts. At 80 accounts, a CSM has roughly 30 minutes per account per week. At 35 accounts, they have over an hour. That extra time means more QBRs, more proactive outreach, and stronger relationships.
 
 ### Better Churn Detection
 When CSMs have fewer accounts, they notice early warning signs faster — a drop in login frequency, a support ticket spike, a change in champion contact.
@@ -171,65 +130,38 @@ Expansion requires trust. Trust requires time. Lower ratios mean CSMs can identi
 
 ## How to Calculate the Right Ratio for Your Business
 
-The ideal ratio depends on your ACV, product complexity, and customer segment.
-
-- High ACV (above $50k): 10-20 accounts per CSM
-- Mid-market (10k-50k ACV): 30-50 accounts per CSM
-- SMB (below $10k ACV): 50-100 accounts per CSM
+The ideal ratio depends on your ACV, product complexity, and customer segment. High ACV above $50k works best at 10-20 accounts per CSM. Mid-market at $10k-$50k ACV works at 30-50 accounts. SMB below $10k ACV can support 50-100 accounts per CSM.
 
 ## The Bottom Line
 
-If your CSMs are managing more than 50 accounts in a mid-market motion, you are leaving NRR on the table. The right ratio is an investment, not a cost.
-    `,
+If your CSMs are managing more than 50 accounts in a mid-market motion, you are leaving NRR on the table. The right ratio is an investment, not a cost.`,
   },
   "nrr-vs-grr-guide": {
     title: "NRR vs GRR — Complete Guide for SaaS",
     description: "Net Revenue Retention vs Gross Revenue Retention — what they mean, how to calculate them, and why NRR is the most important metric in SaaS.",
     tag: "SaaS Metrics",
     readTime: "7 min read",
-    content: `
-Net Revenue Retention (NRR) and Gross Revenue Retention (GRR) are the two most important metrics in SaaS. Understanding the difference between them — and knowing which to optimize — is critical for sustainable growth.
+    content: `Net Revenue Retention (NRR) and Gross Revenue Retention (GRR) are the two most important metrics in SaaS. Understanding the difference between them and knowing which to optimize is critical for sustainable growth.
 
 ## What is Gross Revenue Retention (GRR)?
 
-GRR measures the percentage of recurring revenue retained from existing customers, excluding any expansion revenue.
-
-Formula: GRR = (Starting MRR - Churned MRR - Downgrade MRR) / Starting MRR
-
-GRR can never exceed 100%. A GRR of 85% means you retained 85% of your existing revenue, losing 15% to churn and downgrades.
+GRR measures the percentage of recurring revenue retained from existing customers, excluding any expansion revenue. GRR can never exceed 100%. A GRR of 85% means you retained 85% of your existing revenue, losing 15% to churn and downgrades.
 
 ## What is Net Revenue Retention (NRR)?
 
-NRR measures the percentage of recurring revenue retained from existing customers, including expansion revenue from upsells and cross-sells.
-
-Formula: NRR = (Starting MRR - Churned MRR - Downgrade MRR + Expansion MRR) / Starting MRR
-
-NRR can exceed 100%. An NRR above 100% means your existing customers are generating more revenue than you are losing to churn.
+NRR measures the percentage of recurring revenue retained from existing customers, including expansion revenue from upsells and cross-sells. NRR can exceed 100%. An NRR above 100% means your existing customers are generating more revenue than you are losing to churn.
 
 ## Why NRR is the Most Important SaaS Metric
 
-A SaaS company with 120% NRR grows its existing revenue base by 20% per year — without acquiring a single new customer. This is the power of net revenue retention.
-
-Top SaaS companies like Snowflake, Datadog, and HubSpot have historically maintained NRR above 120%. This is why investors use NRR as a primary indicator of product-market fit and CS quality.
+A SaaS company with 120% NRR grows its existing revenue base by 20% per year without acquiring a single new customer. Top SaaS companies like Snowflake, Datadog, and HubSpot have historically maintained NRR above 120%.
 
 ## What is a Good NRR for SaaS?
 
-- Above 120%: Exceptional. World-class CS and strong expansion motion.
-- 100-120%: Healthy. Good retention with room to grow expansion.
-- 85-100%: Needs improvement. Churn is offsetting growth.
-- Below 85%: Critical. Immediate CS intervention required.
+Above 120% is exceptional with world-class CS and strong expansion motion. Between 100-120% is healthy with good retention and room to grow. Between 85-100% needs improvement as churn is offsetting growth. Below 85% is critical and requires immediate CS intervention.
 
 ## How to Improve NRR
 
-Improving NRR requires both reducing churn (improving GRR) and increasing expansion revenue. This means:
-
-- Proactive health monitoring and at-risk intervention
-- Structured expansion playbooks for upsell and cross-sell
-- Regular EBRs to align on value and growth opportunities
-- Dedicated CSMs with enough bandwidth to execute
-
-At Million Square Solutions, we focus on helping SaaS companies reach and sustain 100%+ NRR through dedicated CS teams and AI-powered retention systems.
-    `,
+Improving NRR requires both reducing churn and increasing expansion revenue. This means proactive health monitoring, structured expansion playbooks, regular EBRs, and dedicated CSMs with enough bandwidth to execute. At Million Square Solutions, we focus on helping SaaS companies reach and sustain 100%+ NRR through dedicated CS teams and AI-powered retention systems.`,
   },
 };
 
@@ -260,8 +192,31 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     );
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    author: {
+      "@type": "Person",
+      name: "Balbir Singh",
+      jobTitle: "Founder, Million Square Solutions",
+      url: "https://www.linkedin.com/in/balbirsingh1990",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Million Square Solutions",
+      url: "https://www.millionsquaresolutions.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.millionsquaresolutions.com/blog/" + slug,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navigation />
       <main className="pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
