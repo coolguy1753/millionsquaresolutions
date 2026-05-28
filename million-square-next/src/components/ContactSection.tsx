@@ -14,7 +14,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target;
+    const form = e.target as HTMLFormElement;
     const formDataObj = new FormData(form);
     fetch("/", {
       method: "POST",
