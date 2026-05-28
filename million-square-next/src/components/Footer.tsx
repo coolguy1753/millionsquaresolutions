@@ -4,7 +4,7 @@ import { Mail, Linkedin, ArrowUpRight } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const scrollToSection = (href) => {
+  const scrollToSection = (href: string) => {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
