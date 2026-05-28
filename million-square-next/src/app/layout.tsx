@@ -48,21 +48,43 @@ const jsonLd = {
   '@type': 'ProfessionalService',
   name: 'Million Square Solutions',
   url: 'https://www.millionsquaresolutions.com',
-  description:
-    'Dedicated Customer Success Managers for global SaaS businesses across US, UK, Canada, UAE, Australia and New Zealand.',
+  logo: 'https://www.millionsquaresolutions.com/favicon.ico',
+  description: 'Dedicated Customer Success Managers for global SaaS businesses across US, UK, Canada, UAE, Australia and New Zealand. We reduce churn, improve NRR, and scale customer success operations.',
   founder: {
     '@type': 'Person',
     name: 'Balbir Singh',
     jobTitle: 'Founder & Customer Success Leader',
     sameAs: 'https://www.linkedin.com/in/balbirsingh1990',
+    knowsAbout: ['Customer Success', 'SaaS Retention', 'Churn Reduction', 'NRR Optimization'],
   },
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'info@millionsquaresolutions.com',
+    telephone: '+91-9811813137',
     contactType: 'Customer Service',
+    availableLanguage: 'English',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'New Delhi',
+    addressRegion: 'Delhi',
+    addressCountry: 'IN',
   },
   areaServed: ['US', 'GB', 'CA', 'AE', 'AU', 'NZ'],
-  sameAs: ['https://www.linkedin.com/company/millionsquaresolutions/'],
+  sameAs: [
+    'https://www.linkedin.com/company/millionsquaresolutions/',
+    'https://www.linkedin.com/in/balbirsingh1990',
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Customer Success Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Managed CSM Teams', description: 'Dedicated Customer Success Managers managing 30-35 accounts each for SaaS businesses globally.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Churn Prevention Systems', description: 'AI-powered churn prediction and prevention frameworks to protect recurring revenue.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRR Optimization', description: 'Net Revenue Retention improvement through proactive expansion and renewal strategies.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CRM Architecture', description: 'HubSpot and Salesforce customer success workflow design and implementation.' } },
+    ],
+  },
 };
 
 export default function RootLayout({
