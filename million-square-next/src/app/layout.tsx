@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     'B2B SaaS Customer Success',
   ],
   authors: [{ name: 'Balbir Singh', url: 'https://www.millionsquaresolutions.com' }],
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.millionsquaresolutions.com' },
   openGraph: {
