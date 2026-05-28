@@ -12,13 +12,17 @@ const ContactSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
+    const response = await fetch('https://formspree.io/f/mgoqdkgb', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+    if (response.ok) {
+      setIsSubmitted(true);
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-    }, 5000);
+    }
   };
 
   return (
