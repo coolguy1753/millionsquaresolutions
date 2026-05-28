@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     description:
       'Dedicated Customer Success Managers for global SaaS businesses. Reduce churn, improve NRR, and scale retention with AI-driven CS teams.',
     siteName: 'Million Square Solutions',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Million Square Solutions | Dedicated Customer Success for Global SaaS',
     description:
       'Dedicated Customer Success Managers for global SaaS businesses. Reduce churn, improve NRR, and scale retention with AI-driven CS teams.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
 };
 
