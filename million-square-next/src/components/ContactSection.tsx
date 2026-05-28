@@ -14,21 +14,11 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const formDataObj = new FormData(form);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formDataObj as unknown as Record<string, string>).toString(),
-    })
-    .then(() => {
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      }, 5000);
-    })
-    .catch((error) => alert(error));
+    setIsSubmitted(true);
+    setTimeout(() => {
+      setIsSubmitted(false);
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    }, 5000);
   };
 
   return (
@@ -60,8 +50,7 @@ const ContactSection = () => {
                 <p className="text-muted-foreground">Our customer success team will reach out within 12-24 hours.</p>
               </div>
             ) : (
-              <form name="contact" data-netlify="true" onSubmit={handleSubmit} className="space-y-6">
-                <input type="hidden" name="form-name" value="contact" />
+              <form name="contact" onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white mb-2">Full Name *</label>
