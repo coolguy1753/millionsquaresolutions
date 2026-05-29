@@ -94,3 +94,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
+html {
+  background-color: #0A0E27;
+}
