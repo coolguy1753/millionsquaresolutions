@@ -6,51 +6,34 @@ const HeroSection = () => {
   const scrollToFounder = () => {
     document.querySelector('#founder')?.scrollIntoView({ behavior: 'smooth' });
   };
-
   return (
-    <section id="home" className="relative min-h-screen w-full flex flex-col justify-center items-center text-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 pt-16 overflow-hidden">
+    <section id="home" className="relative min-h-screen w-full flex flex-col justify-center items-center text-center px-6 sm:px-10 md:px-16 pt-16 overflow-hidden">
       <div className="absolute inset-0 bg-[#0A0E27] -z-20" />
       <div className="absolute inset-0 bg-gradient-to-br from-[#0A0E27] via-[#0d1235] to-[#0A0E27] -z-10" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10" />
-
-      <div className="relative z-10 w-full max-w-screen-2xl mx-auto">
-
+      <div className="relative z-10 w-full max-w-screen-xl mx-auto">
         <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-6">
           Customer Success Outsourcing Services
         </div>
-
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight mb-6" style={{background: 'linear-gradient(135deg, #ffffff 0%, #00D4FF 50%, #6B46C1 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-6" style={{background: 'linear-gradient(135deg, #ffffff 0%, #00D4FF 50%, #6B46C1 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
           Your Customers Deserve<br />
-          <span className="text-primary neon-text" style={{WebkitTextFillColor: '#00D4FF'}}>More Than Average CS</span>
+          <span style={{WebkitTextFillColor: '#00D4FF'}} className="neon-text">More Than Average CS</span>
         </h1>
-
         <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-4 leading-relaxed">
-          Dedicated Customer Success Managers for global SaaS businesses —
-          powered by AI workflows, structured EBRs, and a model built around{' '}
+          Dedicated Customer Success Managers for global SaaS businesses powered by AI workflows, structured EBRs, and a model built around{' '}
           <span className="text-primary font-semibold">fewer accounts, deeper relationships.</span>
         </p>
-
         <p className="text-sm sm:text-base text-muted-foreground/70 max-w-3xl mx-auto mb-10">
           Trusted by SaaS companies across the <span className="text-primary font-semibold">US, UK, Canada, UAE, Australia and New Zealand</span> to reduce churn, improve NRR, and scale customer success operations without hiring in-house.
         </p>
-
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <button onClick={scrollToContact} className="btn-futuristic flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
             Book a Free Strategy Call
           </button>
-          <button onClick={scrollToFounder} className="px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl hover:border-primary/50 hover:text-primary transition-all duration-300 flex items-center justify-center gap-2">
+          <button onClick={scrollToFounder} className="px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl hover:border-primary/50 hover:text-primary transition-all duration-300">
             Meet the Founder
           </button>
         </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {[
             { value: '30-35', label: 'Accounts Per CSM', sub: 'vs industry avg 50-80' },
             { value: '100%+', label: 'NRR Sustained', sub: 'across portfolios' },
@@ -64,10 +47,8 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
 };
-
 export default HeroSection;
