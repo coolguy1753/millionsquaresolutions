@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     apple: '/favicon.png',
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://www.millionsquaresolutions.com' },
   openGraph: {
     type: 'website',
     url: 'https://www.millionsquaresolutions.com',

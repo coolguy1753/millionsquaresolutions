@@ -19,7 +19,7 @@ const HeroSection = () => {
           <span style={{WebkitTextFillColor: '#00D4FF'}} className="neon-text">More Than Average CS</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-4 leading-relaxed">
-          Dedicated Customer Success Managers for global SaaS businesses powered by AI workflows, structured EBRs, and a model built around{' '}
+          Dedicated Customer Success Managers for global SaaS businesses - powered by AI workflows, structured EBRs, and a model built around{' '}
           <span className="text-primary font-semibold">fewer accounts, deeper relationships.</span>
         </p>
         <p className="text-sm sm:text-base text-muted-foreground/70 max-w-3xl mx-auto mb-10">

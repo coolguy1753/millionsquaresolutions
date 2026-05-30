@@ -58,7 +58,7 @@ const Footer = () => {
               LinkedIn
             </a>
             <p className="text-xs text-muted-foreground text-center">
-              2026 <span className="text-white font-medium">Million Square Solutions</span>. Dedicated Customer Success for Global SaaS.
+              © 2026 <span className="text-white font-medium">Million Square Solutions</span>. Dedicated Customer Success for Global SaaS.
             </p>
             <div className="flex items-center gap-4">
               <a href="/privacy" className="text-xs text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a>
