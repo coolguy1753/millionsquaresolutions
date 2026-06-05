@@ -15,6 +15,7 @@ const posts = [
     description: "A complete guide to CS outsourcing — what it is, how it works, and why global SaaS companies are choosing it over in-house CS teams.",
     tag: "CS Outsourcing",
     readTime: "8 min read",
+    date: "May 28, 2026",
   },
   {
     slug: "customer-success-as-a-service",
@@ -22,6 +23,7 @@ const posts = [
     description: "Everything you need to know about CSaaS — the model, benefits, pricing, and how to choose the right provider for your SaaS business.",
     tag: "CSaaS",
     readTime: "10 min read",
+    date: "May 28, 2026",
   },
   {
     slug: "how-to-reduce-saas-churn",
@@ -29,6 +31,7 @@ const posts = [
     description: "A proven 90-day framework to identify churn risk, engage at-risk accounts, and build retention systems that protect your recurring revenue.",
     tag: "Churn Reduction",
     readTime: "9 min read",
+    date: "May 28, 2026",
   },
   {
     slug: "csm-account-ratio",
@@ -36,6 +39,7 @@ const posts = [
     description: "The industry runs CSMs at 50-80 accounts. We explain why 30-35 is the sweet spot and how the right ratio directly impacts your NRR.",
     tag: "CS Operations",
     readTime: "6 min read",
+    date: "May 28, 2026",
   },
   {
     slug: "nrr-vs-grr-guide",
@@ -43,6 +47,7 @@ const posts = [
     description: "Net Revenue Retention vs Gross Revenue Retention — what they mean, how to calculate them, and why NRR is the most important metric in SaaS.",
     tag: "SaaS Metrics",
     readTime: "7 min read",
+    date: "May 28, 2026",
   },
 ];
 
@@ -55,7 +60,7 @@ export default function BlogPage() {
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-4">Insights</div>
             <h1 className="text-4xl md:text-6xl font-bold futuristic-heading mb-6">Customer Success Blog</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Expert insights on CS outsourcing, churn reduction, NRR optimization and SaaS retention — from practitioners who have done it.</p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Expert insights on CS outsourcing, churn reduction, NRR optimization and SaaS retention from practitioners who have done it.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
@@ -63,7 +68,11 @@ export default function BlogPage() {
                 <div className="text-xs text-primary uppercase tracking-widest font-bold mb-3">{post.tag}</div>
                 <h2 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">{post.title}</h2>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">{post.description}</p>
-                <div className="text-xs text-muted-foreground">{post.readTime}</div>
+                <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                  <span>{post.date}</span>
+                  <span>·</span>
+                  <span>{post.readTime}</span>
+                </div>
               </Link>
             ))}
           </div>
