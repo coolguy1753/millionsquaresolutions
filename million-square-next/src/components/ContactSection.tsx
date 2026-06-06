@@ -75,7 +75,7 @@ const ContactSection = () => {
                     <label htmlFor="phone" className="block text-sm font-medium text-white mb-2">Phone Number</label>
                     <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleInputChange}
                       className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:ring-2 focus:ring-primary focus:outline-none transition-all"
-                      placeholder="+1 (555) 000-0000" />
+                      placeholder="+1 / +44 / +91 — Your Number" />
                   </div>
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-white mb-2">Focus Area *</label>
