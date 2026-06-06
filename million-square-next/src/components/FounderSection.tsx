@@ -6,26 +6,34 @@ const FounderSection = () => {
     <section id="founder" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent -z-10" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="w-80 h-80 rounded-2xl glass-morphism border border-primary/30 neon-glow overflow-hidden">
-                <img src="/founder.jpg" alt="Million Square Solutions Founder" className="w-full h-full object-cover" />
-              </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl" />
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-secondary/20 rounded-full blur-xl" />
-            </div>
+        <div className="text-center mb-16">
+          <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-4">The Person Behind This</div>
+          <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-6">Why Million Square Solutions?</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">We did not build a theory. We built from experience — over a decade inside B2B SaaS Customer Success, doing the work, not advising on it.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300">
+            <div className="text-4xl font-black text-primary mb-4">30-35</div>
+            <h3 className="text-xl font-bold text-white mb-3">Accounts Per CSM</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">Industry average is 50-80. We cap at 30-35 — giving your customers more time, faster responses, and stronger relationships.</p>
           </div>
-          <div>
-            <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-6">The Person Behind This</div>
-            <h2 className="text-4xl md:text-5xl font-bold futuristic-heading mb-2">Why Trust Us? Start With Me.</h2>
-            <p className="text-primary font-semibold text-lg mb-6">Founder — Customer Success Leader</p>
-            <p className="text-muted-foreground leading-relaxed mb-4">Million Square Solutions was built by a customer success practitioner, not a consultant. Every dedicated CSM we deploy is trained on real-world SaaS retention playbooks.</p>
-            <p className="text-muted-foreground leading-relaxed mb-8">10+ years inside B2B SaaS Customer Success — managing accounts, running QBRs, saving at-risk customers, and integrating AI into CS operations. Oracle Certified Generative AI Professional.</p>
-            <div className="flex flex-wrap gap-4">
-              <Link href="/about" className="btn-futuristic px-6 py-3 inline-block">Our Full Story</Link>
-            </div>
+          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-accent/40 transition-all duration-300">
+            <div className="text-4xl font-black text-accent mb-4">AI</div>
+            <h3 className="text-xl font-bold text-white mb-3">Native Operations</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">Oracle Certified Generative AI expertise built into every engagement. QBR prep time cut by 50%. Churn prediction before it happens.</p>
           </div>
+          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-secondary/40 transition-all duration-300">
+            <div className="text-4xl font-black text-secondary mb-4">10+</div>
+            <h3 className="text-xl font-bold text-white mb-3">Years Doing It</h3>
+            <p className="text-muted-foreground text-sm leading-relaxed">Not consulting. Not advising. Managing accounts, running QBRs, saving at-risk customers — real SaaS CS experience across 150+ accounts.</p>
+          </div>
+        </div>
+        <div className="glass-morphism p-10 rounded-2xl border border-primary/20 mb-12">
+          <p className="text-xl text-white font-semibold text-center italic mb-4">"Million Square Solutions exists because great Customer Success deserves more than an average vendor. We built this to close that gap."</p>
+          <p className="text-primary text-center text-sm font-mono tracking-widest uppercase">— Founder, Million Square Solutions</p>
+        </div>
+        <div className="text-center">
+          <Link href="/about" className="btn-futuristic px-8 py-4 text-lg font-bold inline-block">Our Full Story</Link>
         </div>
       </div>
     </section>

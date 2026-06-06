@@ -19,7 +19,7 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Million Square Solutions — founded by a 10+ year B2B SaaS Customer Success veteran. Learn about our mission, values and approach to CS outsourcing.",
+  description: "Million Square Solutions — a dedicated Customer Success outsourcing company built on 10+ years of real B2B SaaS experience. Learn about our mission, values and approach.",
 };
 
 export default function AboutPage() {
@@ -34,21 +34,17 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold futuristic-heading mb-6">About Million Square Solutions</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Built by a Customer Success practitioner, not a consultant. Every dedicated CSM we deploy is trained on real-world SaaS retention playbooks.</p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-            <div>
-              <h2 className="text-3xl font-bold futuristic-heading mb-4">I didn't build a theory.</h2>
-              <p className="text-primary font-semibold text-xl mb-6">I built from experience.</p>
-              <p className="text-muted-foreground leading-relaxed mb-4">Over a decade inside Customer Success, not advising on it, but doing it. Managing accounts, running QBRs, saving at-risk customers, building teams, and integrating AI into how CS works day-to-day.</p>
-              <p className="text-muted-foreground leading-relaxed mb-4">Built and led CSM teams managing 150+ SaaS accounts, building churn prediction frameworks, cutting QBR prep time by 50% using GenAI, and sustaining 100%+ Net Revenue Retention consistently across complex mid-market portfolios.</p>
-              <p className="text-muted-foreground leading-relaxed mb-8">Million Square Solutions exists because I know exactly what great CS looks like and I know most companies never get it. I built this to close that gap.</p>
-              <div className="glass-morphism p-6 rounded-xl border border-primary/20">
-                <p className="text-white font-semibold italic">"Million Square Solutions exists because I know exactly what great CS looks like — and I know most companies never get it. I built this to close that gap."</p>
-                <p className="text-primary text-sm mt-3">— Founder, Million Square Solutions</p>
+          <div className="glass-morphism p-10 rounded-2xl border border-primary/20 mb-16">
+            <h2 className="text-3xl font-bold futuristic-heading mb-4 text-center">We did not build a theory.</h2>
+            <p className="text-primary font-semibold text-xl text-center mb-8">We built from experience.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-muted-foreground leading-relaxed mb-4">Over a decade inside Customer Success, not advising on it, but doing it. Managing accounts, running QBRs, saving at-risk customers, building teams, and integrating AI into how CS works day-to-day.</p>
+                <p className="text-muted-foreground leading-relaxed">Built and led CSM teams managing 150+ SaaS accounts, building churn prediction frameworks, cutting QBR prep time by 50% using GenAI, and sustaining 100%+ Net Revenue Retention consistently across complex mid-market portfolios.</p>
               </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-2xl glass-morphism border border-primary/30 neon-glow overflow-hidden">
-                <img src="/founder.jpg" alt="Million Square Solutions Founder" className="w-full h-full object-cover" />
+              <div>
+                <p className="text-muted-foreground leading-relaxed mb-4">Million Square Solutions exists because we know exactly what great CS looks like — and we know most companies never get it. We built this to close that gap.</p>
+                <p className="text-muted-foreground leading-relaxed">When you work with us, you are not getting a generic outsourcing firm. You are getting a dedicated customer success team built, trained, and led by someone who has lived the exact problems your customers face — and knows how to solve them.</p>
               </div>
             </div>
           </div>
@@ -58,14 +54,17 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 text-center">
+              <div className="text-3xl font-black text-primary mb-4">30-35</div>
               <h3 className="text-xl font-bold text-white mb-3">Fewer Accounts, Deeper Relationships</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">30-35 accounts per CSM vs industry average of 50-80. More time per customer means better outcomes.</p>
             </div>
             <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 text-center">
+              <div className="text-3xl font-black text-accent mb-4">AI</div>
               <h3 className="text-xl font-bold text-white mb-3">AI-Native from Day One</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">Every CSM is equipped with GenAI tools. Oracle Certified AI expertise built into every engagement.</p>
             </div>
             <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 text-center">
+              <div className="text-3xl font-black text-secondary mb-4">100%+</div>
               <h3 className="text-xl font-bold text-white mb-3">Outcomes Over Activity</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">We measure success by NRR, churn rate, and expansion revenue, not tickets closed or emails sent.</p>
             </div>

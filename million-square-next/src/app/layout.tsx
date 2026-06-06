@@ -54,11 +54,7 @@ const jsonLd = {
   url: 'https://www.millionsquaresolutions.com',
   logo: 'https://www.millionsquaresolutions.com/favicon.ico',
   description: 'Dedicated Customer Success Managers for global SaaS businesses across US, UK, Canada, UAE, Australia and New Zealand. We reduce churn, improve NRR, and scale customer success operations.',
-  founder: {
-    '@type': 'Person',
-    jobTitle: 'Founder & Customer Success Leader',
-    knowsAbout: ['Customer Success', 'SaaS Retention', 'Churn Reduction', 'NRR Optimization'],
-  },
+
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'info@millionsquaresolutions.com',
