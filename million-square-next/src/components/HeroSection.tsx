@@ -30,7 +30,7 @@ const HeroSection = () => {
             Book a Free Strategy Call
           </button>
           <button onClick={scrollToFounder} className="px-8 py-4 text-lg font-semibold text-white border border-white/20 rounded-xl hover:border-primary/50 hover:text-primary transition-all duration-300">
-            Meet the Founder
+            Why Choose Us
           </button>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
