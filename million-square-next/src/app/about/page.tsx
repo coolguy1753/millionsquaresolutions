@@ -7,25 +7,19 @@ const jsonLd = {
   "@type": "AboutPage",
   name: "About Million Square Solutions",
   url: "https://www.millionsquaresolutions.com/about",
-  description: "Million Square Solutions was founded by Balbir Singh, a 10+ year B2B SaaS Customer Success veteran. We provide dedicated CSM teams for global SaaS businesses.",
+  description: "Million Square Solutions was founded by a 10+ year B2B SaaS Customer Success veteran. We provide dedicated CSM teams for global SaaS businesses.",
   mainEntity: {
-    "@type": "Person",
-    name: "Balbir Singh",
-    jobTitle: "Founder and Customer Success Leader",
-    worksFor: {
-      "@type": "Organization",
-      name: "Million Square Solutions",
-      url: "https://www.millionsquaresolutions.com",
-    },
-    sameAs: "https://www.linkedin.com/in/balbirsingh1990",
-    knowsAbout: ["Customer Success", "SaaS Retention", "Churn Reduction", "NRR Optimization", "CRM Architecture", "AI in Customer Success"],
+    "@type": "Organization",
+    name: "Million Square Solutions",
+    url: "https://www.millionsquaresolutions.com",
     description: "10+ years of B2B SaaS Customer Success experience. Built and led CSM teams managing 150+ SaaS accounts. Oracle Certified Generative AI Professional.",
+    knowsAbout: ["Customer Success", "SaaS Retention", "Churn Reduction", "NRR Optimization", "CRM Architecture", "AI in Customer Success"],
   },
 };
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Million Square Solutions, founded by Balbir Singh, a 10+ year B2B SaaS Customer Success veteran. Learn about our mission, values and approach to CS outsourcing.",
+  description: "Million Square Solutions — founded by a 10+ year B2B SaaS Customer Success veteran. Learn about our mission, values and approach to CS outsourcing.",
 };
 
 export default function AboutPage() {
@@ -38,20 +32,23 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-4">Our Story</div>
             <h1 className="text-4xl md:text-6xl font-bold futuristic-heading mb-6">About Million Square Solutions</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Built by a Customer Success practitioner, not a consultant.</p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Built by a Customer Success practitioner, not a consultant. Every dedicated CSM we deploy is trained on real-world SaaS retention playbooks.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <h2 className="text-3xl font-bold futuristic-heading mb-4">Balbir Singh</h2>
-              <p className="text-primary font-semibold mb-4">Founder and Customer Success Leader</p>
-              <p className="text-muted-foreground leading-relaxed mb-4">I have spent over a decade inside Customer Success, not advising on it, but doing it. Managing accounts, running QBRs, saving at-risk customers, building teams, and integrating AI into how CS works day-to-day.</p>
-              <p className="text-muted-foreground leading-relaxed mb-4">I have built and led CSM teams managing 150+ SaaS accounts, building churn prediction frameworks, cutting QBR prep time by 50% using GenAI, and sustaining 100%+ Net Revenue Retention consistently.</p>
+              <h2 className="text-3xl font-bold futuristic-heading mb-4">I didn't build a theory.</h2>
+              <p className="text-primary font-semibold text-xl mb-6">I built from experience.</p>
+              <p className="text-muted-foreground leading-relaxed mb-4">Over a decade inside Customer Success, not advising on it, but doing it. Managing accounts, running QBRs, saving at-risk customers, building teams, and integrating AI into how CS works day-to-day.</p>
+              <p className="text-muted-foreground leading-relaxed mb-4">Built and led CSM teams managing 150+ SaaS accounts, building churn prediction frameworks, cutting QBR prep time by 50% using GenAI, and sustaining 100%+ Net Revenue Retention consistently across complex mid-market portfolios.</p>
               <p className="text-muted-foreground leading-relaxed mb-8">Million Square Solutions exists because I know exactly what great CS looks like and I know most companies never get it. I built this to close that gap.</p>
-              <a href="https://www.linkedin.com/in/balbirsingh1990" target="_blank" rel="noopener noreferrer" className="btn-futuristic px-6 py-3 inline-block">Connect on LinkedIn</a>
+              <div className="glass-morphism p-6 rounded-xl border border-primary/20">
+                <p className="text-white font-semibold italic">"Million Square Solutions exists because I know exactly what great CS looks like — and I know most companies never get it. I built this to close that gap."</p>
+                <p className="text-primary text-sm mt-3">— Founder, Million Square Solutions</p>
+              </div>
             </div>
             <div className="flex justify-center">
               <div className="w-80 h-80 rounded-2xl glass-morphism border border-primary/30 neon-glow overflow-hidden">
-                <img src="/founder.jpg" alt="Balbir Singh Founder Million Square Solutions" className="w-full h-full object-cover" />
+                <img src="/founder.jpg" alt="Million Square Solutions Founder" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

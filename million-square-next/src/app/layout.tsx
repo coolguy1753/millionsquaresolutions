@@ -56,9 +56,7 @@ const jsonLd = {
   description: 'Dedicated Customer Success Managers for global SaaS businesses across US, UK, Canada, UAE, Australia and New Zealand. We reduce churn, improve NRR, and scale customer success operations.',
   founder: {
     '@type': 'Person',
-    name: 'Balbir Singh',
     jobTitle: 'Founder & Customer Success Leader',
-    sameAs: 'https://www.linkedin.com/in/balbirsingh1990',
     knowsAbout: ['Customer Success', 'SaaS Retention', 'Churn Reduction', 'NRR Optimization'],
   },
   contactPoint: {
@@ -77,7 +75,6 @@ const jsonLd = {
   areaServed: ['US', 'GB', 'CA', 'AE', 'AU', 'NZ'],
   sameAs: [
     'https://www.linkedin.com/company/millionsquaresolutions/',
-    'https://www.linkedin.com/in/balbirsingh1990',
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',

@@ -271,7 +271,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div className="text-xs text-primary uppercase tracking-widest font-bold mb-3">{post.tag}</div>
           <h1 className="text-4xl md:text-5xl font-bold futuristic-heading mb-4">{post.title}</h1>
           <p className="text-muted-foreground mb-2">{post.readTime}</p>
-          <p className="text-muted-foreground text-sm mb-2">By <span className="text-white font-semibold">Balbir Singh</span> — Founder, Million Square Solutions</p>
+          <p className="text-muted-foreground text-sm mb-2">By <span className="text-white font-semibold">Founder</span> — Million Square Solutions</p>
           <div className="border-t border-white/10 my-8" />
           <div className="prose prose-invert max-w-none">
             {post.content.split("\n\n").map((para, i) => {
