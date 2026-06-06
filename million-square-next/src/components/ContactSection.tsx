@@ -1,6 +1,6 @@
-'use client';
+﻿'use client';
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle, Clock } from 'lucide-react';
+import { Mail, Phone, Send, CheckCircle, Clock } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -127,39 +127,7 @@ const ContactSection = () => {
                 </a>
                 <p className="text-muted-foreground text-xs mt-1">India HQ — serving US, UK, Canada, UAE, Australia & NZ</p>
               </div>
-            </div>
-
-            <div className="glass-morphism p-6 rounded-xl neon-glow border border-white/10 hover:border-secondary/50 hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-1 flex items-start gap-4">
-              <MapPin className="w-7 h-7 text-secondary mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-bold text-white mb-1">Office Headquarters</h3>
-                <address className="text-muted-foreground not-italic leading-relaxed text-sm">
-                  G-3/16, First Floor, Malviya Nagar<br />
-                  New Delhi, Delhi 110017, India
-                </address>
-                <p className="text-muted-foreground text-xs mt-1">Dedicated CSM teams for global SaaS clients</p>
-              </div>
-            </div>
-
-            <div className="glass-morphism p-6 rounded-xl neon-glow border border-white/10 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1">
-              <div className="flex items-center gap-3 mb-4">
-                <Clock className="w-6 h-6 text-primary" />
-                <h3 className="text-lg font-bold text-white">Global Availability</h3>
-              </div>
-              <div className="space-y-3">
-                <div className="flex justify-between border-b border-white/5 pb-2">
-                  <span className="text-muted-foreground text-sm">Strategic Support</span>
-                  <span className="text-white font-medium text-sm">24/7 Global Coverage</span>
-                </div>
-                <div className="flex justify-between border-b border-white/5 pb-2">
-                  <span className="text-muted-foreground text-sm">Office Hours</span>
-                  <span className="text-white font-medium text-sm">9:00 AM - 9:00 PM</span>
-                </div>
-                <p className="text-xs text-primary italic mt-2">
-                  *Our dedicated CSM teams align with your time zones — EST, PST, GMT, GST, AEST.
-                </p>
-              </div>
-            </div>
+            </div></div>
           </div>
 
         </div>
