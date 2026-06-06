@@ -116,7 +116,7 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; 
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4), 0 4px 12px rgba(107, 70, 193, 0.3);
 }
-.btn-futuristic span, .btn-futuristic svg { position: relative; z-index: 1; }
+.btn-futuristic * { position: relative; z-index: 1; }
 
 .fade-in {
   opacity: 0;
