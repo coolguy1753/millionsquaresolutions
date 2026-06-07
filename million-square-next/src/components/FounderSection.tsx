@@ -12,17 +12,17 @@ const FounderSection = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">We did not build a theory. We built from experience — over a decade inside B2B SaaS Customer Success, doing the work, not advising on it.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300">
+          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 fade-in">
             <div className="text-4xl font-black text-primary mb-4">30-35</div>
             <h3 className="text-xl font-bold text-white mb-3">Accounts Per CSM</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">Industry average is 50-80. We cap at 30-35 — giving your customers more time, faster responses, and stronger relationships.</p>
           </div>
-          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-accent/40 transition-all duration-300">
+          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-accent/40 transition-all duration-300 hover:-translate-y-1 fade-in fade-in-delay-2">
             <div className="text-4xl font-black text-accent mb-4">AI</div>
             <h3 className="text-xl font-bold text-white mb-3">Native Operations</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">Oracle Certified Generative AI expertise built into every engagement. QBR prep time cut by 50%. Churn prediction before it happens.</p>
           </div>
-          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-secondary/40 transition-all duration-300">
+          <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-secondary/40 transition-all duration-300 hover:-translate-y-1 fade-in fade-in-delay-3">
             <div className="text-4xl font-black text-secondary mb-4">10+</div>
             <h3 className="text-xl font-bold text-white mb-3">Years Doing It</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">Not consulting. Not advising. Managing accounts, running QBRs, saving at-risk customers — real SaaS CS experience across 150+ accounts.</p>
