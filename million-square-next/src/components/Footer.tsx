@@ -71,7 +71,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-xs text-muted-foreground text-center">
-              {currentYear} <span className="text-white font-medium">Million Square Solutions</span>. Dedicated Customer Success for Global SaaS.
+              © {currentYear} <span className="text-white font-medium">Million Square Solutions</span>. Dedicated Customer Success for Global SaaS.
             </p>
             <div className="flex items-center gap-4">
               <a href="/privacy" className="text-xs text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a>
