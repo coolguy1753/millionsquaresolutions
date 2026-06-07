@@ -17,12 +17,12 @@ const HeroSection = () => {
         <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-6">
           Customer Success Outsourcing Services
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-6" style={{background: 'linear-gradient(135deg, #ffffff 0%, #00D4FF 50%, #6B46C1 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-6" style={{background: 'linear-gradient(135deg, #00D4FF 0%, #ffffff 40%, #6B46C1 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>
           Your Customers Deserve<br />
           <span style={{WebkitTextFillColor: '#00D4FF'}} className="neon-text">More Than Average CS</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto mb-4 leading-relaxed">
-          Dedicated Customer Success Managers for global SaaS businesses - powered by AI workflows, structured EBRs, and a model built around{' '}
+          Dedicated Customer Success Managers for global SaaS businesses — powered by AI workflows, structured EBRs, and a model built around{' '}
           <span className="text-primary font-semibold">fewer accounts, deeper relationships.</span>
         </p>
         <p className="text-sm sm:text-base text-muted-foreground/70 max-w-3xl mx-auto mb-10">
