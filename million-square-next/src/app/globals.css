@@ -166,3 +166,11 @@ select { color-scheme: dark; }
   50% { filter: drop-shadow(0 0 12px rgba(0,212,255,0.8)); }
 }
 .icon-pulse { animation: pulse-glow 2.5s ease-in-out infinite; }
+
+.hover-card {
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.hover-card:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+  transform: translateY(-2px);
+}
