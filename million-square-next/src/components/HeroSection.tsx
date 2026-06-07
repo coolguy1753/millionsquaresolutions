@@ -40,7 +40,7 @@ const HeroSection = () => {
             { value: '190%', label: 'Client Review Growth', sub: 'verified results' },
             { value: '3 mo', label: 'Churn Recovery', sub: 'avg turnaround time' },
           ].map((stat, i) => (
-            <div key={i} className="glass-morphism p-4 rounded-xl border border-white/10 hover:border-primary/30 transition-all duration-300">
+            <div key={i} className={`glass-morphism p-4 rounded-xl border border-white/10 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1 fade-in fade-in-delay-${i + 1}`}>
               <div className="text-2xl md:text-3xl font-black text-primary mb-1">{stat.value}</div>
               <div className="text-xs text-white uppercase tracking-wider font-semibold">{stat.label}</div>
               <div className="text-xs text-muted-foreground mt-1">{stat.sub}</div>
