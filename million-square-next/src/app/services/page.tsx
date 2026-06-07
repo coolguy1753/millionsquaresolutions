@@ -99,7 +99,7 @@ export default function ServicesPage() {
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div key={index} className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-1">
+                <div key={index} className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 fade-in">
                   <div className="flex items-start gap-4 mb-6">
                     <Icon className={"w-10 h-10 " + service.iconColor} />
                     <div>
