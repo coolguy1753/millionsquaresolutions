@@ -34,23 +34,43 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-6xl font-bold futuristic-heading mb-6">About Million Square Solutions</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Built by a Customer Success practitioner, not a consultant. Every dedicated CSM we deploy is trained on real-world SaaS retention playbooks.</p>
           </div>
-          <div className="glass-morphism p-10 rounded-2xl border border-primary/20 mb-16">
-            <h2 className="text-3xl font-bold futuristic-heading mb-4 text-center">We did not build a theory.</h2>
-            <p className="text-primary font-semibold text-xl text-center mb-8">We built from experience.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <p className="text-muted-foreground leading-relaxed mb-4">Over a decade inside Customer Success, not advising on it, but doing it. Managing accounts, running QBRs, saving at-risk customers, building teams, and integrating AI into how CS works day-to-day.</p>
-                <p className="text-muted-foreground leading-relaxed">Built and led CSM teams managing 150+ SaaS accounts, building churn prediction frameworks, cutting QBR prep time by 50% using GenAI, and sustaining 100%+ Net Revenue Retention consistently across complex mid-market portfolios.</p>
+          <div className="relative mb-16 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 rounded-3xl" />
+            <div className="relative border border-white/10 rounded-3xl p-12 md:p-16">
+              <div className="mb-12">
+                <p className="text-xs font-mono tracking-[0.3em] text-primary/60 uppercase mb-4">Our Philosophy</p>
+                <h2 className="text-5xl md:text-7xl font-black leading-[1.05] mb-6">
+                  <span className="futuristic-heading">We did not</span><br />
+                  <span className="futuristic-heading">build a theory.</span>
+                </h2>
+                <p className="text-2xl md:text-3xl font-bold text-white/90 italic">We built from experience.</p>
               </div>
-              <div>
-                <p className="text-muted-foreground leading-relaxed mb-4">Million Square Solutions exists because we know exactly what great CS looks like — and we know most companies never get it. We built this to close that gap.</p>
-                <p className="text-muted-foreground leading-relaxed">When you work with us, you are not getting a generic outsourcing firm. You are getting a dedicated customer success team built, trained, and led by someone who has lived the exact problems your customers face — and knows how to solve them.</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div className="border-l-2 border-primary/40 pl-6">
+                  <p className="text-4xl font-black text-primary mb-2">10+</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">Years inside B2B SaaS Customer Success — managing accounts, running QBRs, saving at-risk customers every single day.</p>
+                </div>
+                <div className="border-l-2 border-secondary/40 pl-6">
+                  <p className="text-4xl font-black text-secondary mb-2">150+</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">SaaS accounts led — building churn prediction frameworks and sustaining 100%+ NRR across complex mid-market portfolios.</p>
+                </div>
+                <div className="border-l-2 border-accent/40 pl-6">
+                  <p className="text-4xl font-black text-accent mb-2">50%</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">QBR prep time cut using GenAI — Oracle Certified expertise built into every engagement from day one.</p>
+                </div>
+              </div>
+              <div className="border-t border-white/10 pt-8">
+                <p className="text-lg text-white/80 leading-relaxed max-w-3xl">When you work with us, you are not getting a generic outsourcing firm. You are getting a dedicated customer success team that has lived the exact problems your customers face — and knows how to solve them.</p>
               </div>
             </div>
           </div>
-          <div className="glass-morphism p-12 rounded-2xl border border-white/10 mb-12">
-            <h2 className="text-3xl font-bold futuristic-heading mb-6 text-center">Our Mission</h2>
-            <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">To give every SaaS company access to world-class Customer Success through dedicated CSM teams powered by AI workflows and real SaaS expertise.</p>
+          <div className="relative mb-12 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/5 to-primary/10 rounded-3xl" />
+            <div className="relative border border-primary/20 rounded-3xl p-12 text-center">
+              <p className="text-xs font-mono tracking-[0.3em] text-primary/60 uppercase mb-6">Our Mission</p>
+              <h2 className="text-4xl md:text-5xl font-black futuristic-heading mb-6 leading-tight">To give every SaaS company<br />access to world-class CS.</h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">Through dedicated CSM teams powered by AI workflows, real SaaS expertise, and a model built around fewer accounts and deeper relationships.</p>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 text-center">
