@@ -16,19 +16,19 @@ export default function PrivacyPage() {
           <h1 className="text-4xl font-bold futuristic-heading mb-4">Privacy Policy</h1>
           <p className="text-muted-foreground mb-8">Last updated: May 2026</p>
           <div className="space-y-8">
-            <div className="glass-morphism p-8 rounded-2xl border border-white/10">
+            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-300">
               <h2 className="text-xl font-bold text-primary mb-4">Information We Collect</h2>
               <p className="text-muted-foreground leading-relaxed">We collect information you provide directly to us when you fill out our contact form, including your name, email address, phone number, company name, and message. We do not sell your personal information to third parties.</p>
             </div>
-            <div className="glass-morphism p-8 rounded-2xl border border-white/10">
+            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-300">
               <h2 className="text-xl font-bold text-primary mb-4">How We Use Your Information</h2>
               <p className="text-muted-foreground leading-relaxed">We use the information we collect to respond to your inquiries, provide our customer success outsourcing services, send you relevant information about our services, and improve our website and services.</p>
             </div>
-            <div className="glass-morphism p-8 rounded-2xl border border-white/10">
+            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-300">
               <h2 className="text-xl font-bold text-primary mb-4">Data Security</h2>
               <p className="text-muted-foreground leading-relaxed">We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
             </div>
-            <div className="glass-morphism p-8 rounded-2xl border border-white/10">
+            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/30 transition-all duration-300">
               <h2 className="text-xl font-bold text-primary mb-4">Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">If you have any questions about this Privacy Policy, please contact us at info@millionsquaresolutions.com</p>
             </div>

@@ -252,7 +252,7 @@ export default function BlogPostPage() {
           </div>
           <div className="border-t border-white/10 my-12" />
           <FAQSection faqs={post.faqs} />
-          <div className="glass-morphism p-8 rounded-2xl border border-primary/20 text-center">
+          <div className="glass-morphism p-8 rounded-2xl border border-primary/20 text-center hover:border-primary/40 hover:-translate-y-1 transition-all duration-300">
             <h2 className="text-2xl font-bold futuristic-heading mb-3">Ready to improve your Customer Success?</h2>
             <p className="text-muted-foreground mb-6">Book a free 30-minute strategy call with Million Square Solutions.</p>
             <a href="/#contact" className="btn-futuristic px-8 py-3 font-bold inline-block">Book a Free Strategy Call</a>
