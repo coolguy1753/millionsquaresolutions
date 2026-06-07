@@ -47,7 +47,7 @@ const services = [
     icon: BrainCircuit,
     iconColor: "text-accent",
     tag: "Strategic Edge",
-    benefits: ["AI churn prediction models", "Automated health scoring", "Personalized customer journeys", "Oracle Certified AI expertise"],
+    benefits: ["AI churn prediction models", "Automated health scoring", "Personalized customer journeys", "AI-certified expertise"],
   },
   {
     title: "NRR Optimization",

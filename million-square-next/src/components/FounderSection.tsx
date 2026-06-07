@@ -20,7 +20,7 @@ const FounderSection = () => {
           <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-accent/40 transition-all duration-300 hover:-translate-y-1 fade-in fade-in-delay-2">
             <div className="text-4xl font-black text-accent mb-4">AI</div>
             <h3 className="text-xl font-bold text-white mb-3">Native Operations</h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">Oracle Certified Generative AI expertise built into every engagement. QBR prep time cut by 50%. Churn prediction before it happens.</p>
+            <p className="text-muted-foreground text-sm leading-relaxed">AI-certified expertise built into every engagement. QBR prep time cut by 50%. Churn prediction before it happens.</p>
           </div>
           <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-secondary/40 transition-all duration-300 hover:-translate-y-1 fade-in fade-in-delay-3">
             <div className="text-4xl font-black text-secondary mb-4">10+</div>

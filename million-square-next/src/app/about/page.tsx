@@ -12,7 +12,7 @@ const jsonLd = {
     "@type": "Organization",
     name: "Million Square Solutions",
     url: "https://www.millionsquaresolutions.com",
-    description: "10+ years of B2B SaaS Customer Success experience. Built and led CSM teams managing 150+ SaaS accounts. Oracle Certified Generative AI Professional.",
+    description: "10+ years of B2B SaaS Customer Success experience. Built and led CSM teams managing 150+ SaaS accounts. AI-certified expertise.",
     knowsAbout: ["Customer Success", "SaaS Retention", "Churn Reduction", "NRR Optimization", "CRM Architecture", "AI in Customer Success"],
   },
 };
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 </div>
                 <div className="border-l-2 border-accent/40 pl-6">
                   <p className="text-4xl font-black text-accent mb-2">50%</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">QBR prep time cut using GenAI — Oracle Certified expertise built into every engagement from day one.</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">QBR prep time cut using GenAI — AI-certified expertise built into every engagement from day one.</p>
                 </div>
               </div>
               <div className="border-t border-white/10 pt-8">
@@ -73,36 +73,36 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 text-center">
+            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 text-center fade-in">
               <div className="text-3xl font-black text-primary mb-4">30-35</div>
               <h3 className="text-xl font-bold text-white mb-3">Fewer Accounts, Deeper Relationships</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">30-35 accounts per CSM vs industry average of 50-80. More time per customer means better outcomes.</p>
             </div>
-            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 text-center">
+            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 text-center fade-in">
               <div className="text-3xl font-black text-accent mb-4">AI</div>
               <h3 className="text-xl font-bold text-white mb-3">AI-Native from Day One</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">Every CSM is equipped with GenAI tools. Oracle Certified AI expertise built into every engagement.</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">Every CSM is equipped with GenAI tools. AI-certified expertise built into every engagement.</p>
             </div>
-            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 text-center">
+            <div className="glass-morphism p-8 rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 text-center fade-in">
               <div className="text-3xl font-black text-secondary mb-4">100%+</div>
               <h3 className="text-xl font-bold text-white mb-3">Outcomes Over Activity</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">We measure success by NRR, churn rate, and expansion revenue, not tickets closed or emails sent.</p>
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-            <div className="glass-morphism p-6 rounded-xl border border-white/10 text-center">
+            <div className="glass-morphism p-6 rounded-xl border border-white/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center fade-in">
               <div className="text-3xl font-black text-primary mb-2">10+</div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">Years Experience</div>
             </div>
-            <div className="glass-morphism p-6 rounded-xl border border-white/10 text-center">
+            <div className="glass-morphism p-6 rounded-xl border border-white/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center fade-in">
               <div className="text-3xl font-black text-primary mb-2">150+</div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">SaaS Accounts Led</div>
             </div>
-            <div className="glass-morphism p-6 rounded-xl border border-white/10 text-center">
+            <div className="glass-morphism p-6 rounded-xl border border-white/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center fade-in">
               <div className="text-3xl font-black text-primary mb-2">6</div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">Countries Served</div>
             </div>
-            <div className="glass-morphism p-6 rounded-xl border border-white/10 text-center">
+            <div className="glass-morphism p-6 rounded-xl border border-white/10 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center fade-in">
               <div className="text-3xl font-black text-primary mb-2">100%+</div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">NRR Maintained</div>
             </div>
