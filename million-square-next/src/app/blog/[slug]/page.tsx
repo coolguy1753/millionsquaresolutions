@@ -1,5 +1,6 @@
 ﻿'use client';
 import React, { useState } from 'react';
+import { useParams } from 'next/navigation';
 import type { Metadata } from 'next';
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -203,8 +204,9 @@ function FAQSection({ faqs }: { faqs: { question: string; answer: string }[] }) 
   );
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default function BlogPostPage() {
+  const params = useParams();
+  const slug = params?.slug as string;
   const post = posts[slug];
 
   if (!post) {
