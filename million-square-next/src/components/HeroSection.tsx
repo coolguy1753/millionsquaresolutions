@@ -9,7 +9,10 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen w-full flex flex-col justify-center items-center text-center px-6 sm:px-10 md:px-16 pt-16 overflow-hidden">
       <div className="absolute inset-0 bg-[#0A0E27] -z-20" />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0E27] via-[#0d1235] to-[#0A0E27] -z-10" />
+<div className="absolute inset-0 bg-gradient-to-br from-[#0A0E27] via-[#0d1235] to-[#0A0E27] -z-10" />
+<div className="blob blob-cyan w-96 h-96 top-1/4 left-1/4" />
+<div className="blob blob-purple w-80 h-80 bottom-1/4 right-1/4" />
+<div className="blob blob-cyan w-64 h-64 top-1/3 right-1/3" style={{animationDelay: '-2s'}} />
       <div className="relative z-10 w-full max-w-screen-xl mx-auto">
         <div className="inline-block px-4 py-2 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-mono tracking-widest uppercase mb-6">
           Customer Success Outsourcing Services
