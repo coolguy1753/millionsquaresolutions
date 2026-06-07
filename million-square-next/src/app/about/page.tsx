@@ -107,7 +107,7 @@ export default function AboutPage() {
               <div className="text-xs text-muted-foreground uppercase tracking-wider">NRR Maintained</div>
             </div>
           </div>
-          <div className="glass-morphism p-12 rounded-2xl border border-primary/20 text-center">
+          <div className="glass-morphism p-12 rounded-2xl border border-primary/20 text-center hover:border-primary/50 transition-all duration-300">
             <h2 className="text-3xl font-bold futuristic-heading mb-4">Work With Us</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Ready to see what dedicated Customer Success can do for your SaaS business?</p>
             <a href="/#contact" className="btn-futuristic px-8 py-4 text-lg font-bold inline-block">Book a Free Strategy Call</a>

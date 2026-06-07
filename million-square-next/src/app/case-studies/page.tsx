@@ -108,14 +108,14 @@ export default function CaseStudiesPage() {
                   </ul>
                 </div>
               </div>
-              <div className="glass-morphism p-6 rounded-xl border border-accent/20 mt-4">
+              <div className="glass-morphism p-6 rounded-xl border border-accent/20 mt-4 hover:border-accent/40 transition-all duration-300">
                 <div className="text-xs text-accent uppercase tracking-wider mb-2">The Outcome</div>
                 <p className="text-white font-semibold mb-2">Within 3 months, the client reversed their cancellation decision and renewed their contract.</p>
                 <p className="text-muted-foreground text-sm">The client specifically requested that our team continue managing their account going forward.</p>
               </div>
             </div>
           </div>
-          <div className="glass-morphism p-12 rounded-2xl border border-primary/20 text-center">
+          <div className="glass-morphism p-12 rounded-2xl border border-primary/20 text-center hover:border-primary/50 transition-all duration-300">
             <h2 className="text-3xl font-bold futuristic-heading mb-4">Want Results Like These?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Book a free 30-minute strategy call. We will audit your current CS setup and show you exactly where revenue is leaking.</p>
             <a href="/#contact" className="btn-futuristic px-8 py-4 text-lg font-bold inline-block">Book a Free Strategy Call</a>

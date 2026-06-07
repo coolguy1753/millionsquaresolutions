@@ -120,7 +120,7 @@ export default function ServicesPage() {
               );
             })}
           </div>
-          <div className="glass-morphism p-12 rounded-2xl border border-primary/20 text-center">
+          <div className="glass-morphism p-12 rounded-2xl border border-primary/20 text-center hover:border-primary/50 transition-all duration-300">
             <h2 className="text-3xl font-bold futuristic-heading mb-4">Ready to Scale Your Customer Success?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">Book a free 30-minute strategy call. We will audit your current CS setup and show you exactly where revenue is leaking.</p>
             <a href="/#contact" className="btn-futuristic px-8 py-4 text-lg font-bold inline-block">Book a Free Strategy Call</a>
