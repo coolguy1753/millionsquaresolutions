@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import React from 'react';
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -208,33 +207,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-
-function FAQSection({ faqs }: { faqs: { question: string; answer: string }[] }) {
-  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
-  return (
-    <div className="mb-12">
-      <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-      <div className="space-y-3">
-        {faqs.map((faq, i) => (
-          <div key={i} className="glass-morphism rounded-xl border border-white/10 overflow-hidden transition-all duration-300 hover:border-primary/30">
-            <button
-              onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              className="w-full flex items-center justify-between p-6 text-left"
-            >
-              <h3 className="text-white font-semibold pr-4">{faq.question}</h3>
-              <span className={"text-primary transition-transform duration-300 flex-shrink-0 text-xl " + (openIndex === i ? "rotate-45" : "rotate-0")}>+</span>
-            </button>
-            {openIndex === i && (
-              <div className="px-6 pb-6 border-t border-white/5">
-                <p className="text-muted-foreground text-sm leading-relaxed pt-4">{faq.answer}</p>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 function FAQSection({ faqs }: { faqs: { question: string; answer: string }[] }) {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
