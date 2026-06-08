@@ -71,6 +71,8 @@ const jsonLd = {
   areaServed: ['US', 'GB', 'CA', 'AE', 'AU', 'NZ'],
   sameAs: [
     'https://www.linkedin.com/company/millionsquaresolutions/',
+    'https://clutch.co/profile/million-square-solutions',
+    'https://www.goodfirms.co/company/million-square-solutions',
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
